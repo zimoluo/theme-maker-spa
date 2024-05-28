@@ -12,7 +12,6 @@ import NotificationStylePicker from "./settings/NotificationStylePicker";
 import ThemeProfileSelector from "@/app/design/theme-maker/ThemeProfileSelector";
 
 const settingsNameMap: { [key in keyof Partial<SettingsState>]: string } = {
-  syncSettings: "Sync Settings",
   backgroundRichness: "Background Richness",
   disableCenterPainting: "Disable Center Art",
   disableSoundEffect: "Disable Sound Effect",
