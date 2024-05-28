@@ -1,7 +1,3 @@
 type NavigationKey = "themeMaker";
 
-type MenuUtility =
-  | "logOut"
-  | "resetSettings"
-  | "deleteAccount"
-  | "manuallyDownloadSettings";
+type MenuUtility = "resetSettings";

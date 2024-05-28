@@ -7,7 +7,6 @@ const themeMakerDefaultTheme: ThemeKey = "penumbra";
 
 export const defaultSettings: SettingsState = {
   backgroundRichness: "rich",
-  syncSettings: true,
   floatingCodeSpeed: 1800,
   disableCenterPainting: false,
   disableSoundEffect: false,

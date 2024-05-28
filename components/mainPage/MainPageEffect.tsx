@@ -1,10 +1,8 @@
 "use client";
 
 import { ReactNode, useEffect } from "react";
-import { useUser } from "../contexts/UserContext";
 import { isBirthday, isChristmas, isHalloween } from "@/lib/seasonUtil";
 import { parseStoredSettings, useSettings } from "../contexts/SettingsContext";
-import { restoreClientUser } from "@/lib/dataLayer/client/accountStateCommunicator";
 import { defaultSettings } from "@/lib/constants/defaultSettings";
 import _ from "lodash";
 import ToastBannerReceiver from "../widgets/ToastBannerReceiver";
@@ -35,7 +33,6 @@ const getUniformPageTheme = (
 };
 
 export default function MainPageEffect({ children }: Props) {
-  const { user, setUser } = useUser();
   const { updateSettings, settings } = useSettings();
 
   useEffect(() => {
@@ -45,35 +42,7 @@ export default function MainPageEffect({ children }: Props) {
 
       updateSettings(loadedSettings, false);
 
-      if (user !== null) {
-        return loadedSettings;
-      }
-
-      try {
-        const restoredUserInfo = await restoreClientUser(loadedSettings);
-
-        if (!restoredUserInfo) {
-          throw new Error(
-            "Encountered an unexpected error while trying to restore user session."
-          );
-        }
-
-        if (!restoredUserInfo.exists) {
-          console.log("No user session found.");
-          return loadedSettings;
-        }
-
-        const { integratedUser, downloadedSettings } = restoredUserInfo;
-        setUser(integratedUser);
-        if (downloadedSettings !== null) {
-          updateSettings(downloadedSettings, false);
-        }
-        return downloadedSettings || loadedSettings;
-      } catch (error) {
-        console.error("Error in restoring user session:", error);
-      } finally {
-        return loadedSettings;
-      }
+      return loadedSettings;
     }
 
     downloadUserInfo().then((preparedSettings) => {

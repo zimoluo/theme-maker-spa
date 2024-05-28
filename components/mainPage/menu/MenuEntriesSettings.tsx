@@ -50,20 +50,6 @@ export default function MenuEntriesSettings() {
 
   return (
     <>
-      <div className="flex items-center my-4 ">
-        <div className="flex-grow text-lg md:text-xl ml-1">
-          {settingsNameMap["syncSettings"]}
-        </div>
-        <SettingsFlip
-          onClick={(status: boolean) => {
-            updateSettings({
-              syncSettings: status,
-            });
-          }}
-          state={settings.syncSettings}
-        />
-      </div>
-      <div className="border-primary border-0.4 border-opacity-20" />
       <div className="md:flex md:items-center my-4 ">
         <div className={`text-lg md:text-xl ${menuStyle.entryMinWidth}`}>
           {settingsNameMap["pageTheme"]}

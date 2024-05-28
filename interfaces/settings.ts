@@ -1,6 +1,5 @@
 interface SettingsState {
   backgroundRichness: "minimal" | "reduced" | "rich";
-  syncSettings: boolean;
   floatingCodeSpeed: number;
   disableCenterPainting: boolean;
   disableSoundEffect: boolean;
