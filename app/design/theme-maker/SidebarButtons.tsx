@@ -9,7 +9,6 @@ import ChangeToCustomThemeButton from "./ChangeToCustomThemeButton";
 import EnterFullPageSingleArrow from "@/components/assets/entries/EnterFullPageSingleArrow";
 import ExportIcon from "@/components/assets/entries/ExportIcon";
 import ImportIcon from "@/components/assets/entries/ImportIcon";
-import ImageUploadButton from "./ImageUploadButton";
 import { maxProfileCount } from "@/lib/constants/themeProfiles";
 import FallingStarsIcon from "@/components/assets/entries/FallingStarsIcon";
 import { clampValue, randomIntFromRange } from "@/lib/generalHelper";
@@ -236,7 +235,6 @@ export default function SidebarButtons() {
       >
         <FallingStarsIcon className="w-full h-auto aspect-square scale-105" />
       </button>
-      <ImageUploadButton insertProfile={insertProfile} />
       <button
         className="transition-transform hover:scale-110 duration-300 ease-in-out w-7 h-auto aspect-square"
         onClick={downloadProfile}

@@ -25,4 +25,5 @@ export const defaultSettings: SettingsState = {
   customThemeIndex: 0,
   regularThemeMakerTheme: themeMakerDefaultTheme,
   expandThemeMakerWindow: false,
+  hideThemeMaker: false,
 };

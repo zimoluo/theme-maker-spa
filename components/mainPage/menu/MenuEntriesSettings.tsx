@@ -33,15 +33,16 @@ export default function MenuEntriesSettings() {
 
   const settingsArray: (keyof Partial<SettingsState>)[] = useMemo(() => {
     let initialSettings: (keyof Partial<SettingsState>)[] = [
-      "disableSoundEffect",
+      "expandThemeMakerWindow",
+      "hideThemeMaker",
     ];
 
     if (animationKey === "blog") {
       initialSettings = ["disableCenterPainting", ...initialSettings];
     }
 
-    if (currentPage === "themeMaker") {
-      initialSettings = ["expandThemeMakerWindow", ...initialSettings];
+    if (animationKey === "halloween") {
+      initialSettings = ["disableSoundEffect", ...initialSettings];
     }
 
     return initialSettings;

@@ -11,6 +11,7 @@ interface SettingsState {
   customThemeIndex: number;
   regularThemeMakerTheme: ThemeKey;
   expandThemeMakerWindow: boolean;
+  hideThemeMaker: boolean;
 }
 
 type NotificationStyle = "disabled" | "toast" | "banner";
