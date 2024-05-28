@@ -4,9 +4,9 @@ const environment = "development";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Zimo Web",
-    short_name: "Zimo Web",
-    description: "The personal website of Zimo.",
+    name: "Theme Maker",
+    short_name: "Theme Maker",
+    description: "Theme Maker of Zimo Web.",
     start_url: "/",
     display: "standalone",
     icons: [
