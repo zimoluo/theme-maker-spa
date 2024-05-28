@@ -6,7 +6,7 @@
 
 @media (min-width: 768px) {
   .expanded {
-    width: calc(clamp(5rem, 80vw, 160rem) * 0.3);
+    width: calc(max(5rem, 80vw) * 0.3);
   }
 }
 
