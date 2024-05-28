@@ -1,11 +1,4 @@
 import type { Metadata } from "next";
-import {
-  Roboto_Mono,
-  Lora,
-  Open_Sans,
-  Pacifico,
-  Work_Sans,
-} from "next/font/google";
 import "@/styles/globals.css";
 import ThemeApplier from "@/components/themeUtil/ThemeApplier";
 import MainPageFrame from "@/components/mainPage/MainPageFrame";
@@ -16,37 +9,6 @@ import { baseUrl } from "@/lib/constants/navigationFinder";
 import { ToastProvider } from "@/components/contexts/ToastContext";
 import ThemeDataInitializer from "@/components/themeUtil/ThemeDataInitializer";
 import { defaultRobotsMeta } from "@/lib/siteMetadata";
-
-const mainFont = Work_Sans({
-  subsets: ["latin"],
-  variable: "--font-main",
-  display: "swap",
-});
-
-const fancyFont = Pacifico({
-  subsets: ["latin"],
-  variable: "--font-pacifico",
-  display: "swap",
-  weight: "400",
-});
-
-const tabularFont = Open_Sans({
-  subsets: ["latin"],
-  variable: "--font-open-sans",
-  display: "swap",
-});
-
-const monoFont = Roboto_Mono({
-  subsets: ["latin"],
-  variable: "--font-roboto-mono",
-  display: "swap",
-});
-
-const serifFont = Lora({
-  subsets: ["latin"],
-  variable: "--font-lora",
-  display: "swap",
-});
 
 const environment = (process.env.VERCEL_ENV ?? "development").toLowerCase();
 
@@ -105,9 +67,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${mainFont.variable} ${monoFont.variable} ${tabularFont.variable} ${serifFont.variable} ${fancyFont.variable} font-main`}
-      >
+      <body className="font-main">
         <SettingsProvider>
           <ToastProvider>
             <ThemeDataInitializer>

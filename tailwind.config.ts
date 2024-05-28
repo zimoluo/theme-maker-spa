@@ -10,11 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        main: ["var(--font-main)"],
-        tabular: ["var(--font-open-sans)"],
-        mono: ["var(--font-roboto-mono)"],
-        serif: ["var(--font-lora)"],
-        fancy: ["var(--font-pacifico)"],
+        main: ["Helvetica", "Arial", "Verdana", "Roboto", "Segoe UI", "Tahoma"],
       },
       backdropBlur: {
         reading: "var(--reading-blur, 8px)",
