@@ -11,22 +11,11 @@ import { useNavigation } from "@/lib/helperHooks";
 import NotificationStylePicker from "./settings/NotificationStylePicker";
 import ThemeProfileSelector from "@/app/design/theme-maker/ThemeProfileSelector";
 
-const securityCommentShutDown =
-  process.env.NEXT_PUBLIC_ZIMO_WEB_COMMENT_SHUTDOWN === "true";
-
 const settingsNameMap: { [key in keyof Partial<SettingsState>]: string } = {
   syncSettings: "Sync Settings",
   backgroundRichness: "Background Richness",
-  navigationBar: "Navigation Bar",
   disableCenterPainting: "Disable Center Art",
-  disableComments: "Disable Comments",
-  disableGestures: "Disable Gestures",
-  disableSerifFont: "Disable Serif Font",
-  disableEntryPopUp: "Disable Entry Pop-Up",
-  enableGallery: "Gallery Mode",
   disableSoundEffect: "Disable Sound Effect",
-  instantSearchResult: "Show Search Result Instantly",
-  disableTableOfContents: "Disable Table of Contents",
   pageTheme: "Theme Preset",
   notificationStyle: "Notification Style",
   floatingCodeSpeed: "Floating Code Rate",
@@ -45,33 +34,11 @@ export default function MenuEntriesSettings() {
 
   const settingsArray: (keyof Partial<SettingsState>)[] = useMemo(() => {
     let initialSettings: (keyof Partial<SettingsState>)[] = [
-      "disableComments",
-      "disableGestures",
       "disableSoundEffect",
     ];
 
-    if (currentPage === "blog" || currentPage === "management") {
-      initialSettings = [
-        "disableTableOfContents",
-        "instantSearchResult",
-        ...initialSettings,
-      ];
-    }
-
-    if (currentPage === "blog") {
-      initialSettings = ["disableSerifFont", ...initialSettings];
-    }
-
     if (animationKey === "blog") {
       initialSettings = ["disableCenterPainting", ...initialSettings];
-    }
-
-    if (currentPage === "photos" || currentPage === "projects") {
-      initialSettings = ["disableEntryPopUp", ...initialSettings];
-    }
-
-    if (currentPage === "photos") {
-      initialSettings = ["enableGallery", ...initialSettings];
     }
 
     if (currentPage === "themeMaker") {
@@ -148,23 +115,6 @@ export default function MenuEntriesSettings() {
         />
       </div>
       <div className="border-primary border-0.4 border-opacity-20" />
-      <div className="md:flex md:items-center my-4 ">
-        <div
-          className={`md:flex-grow text-lg md:text-xl ${menuStyle.entryMinWidth}`}
-        >
-          {settingsNameMap["navigationBar"]}
-        </div>
-        <SettingsSlider
-          setValue={(newValue: string | number) => {
-            updateSettings({
-              navigationBar: newValue as "disabled" | "always" | "flexible",
-            });
-          }}
-          values={["disabled", "always", "flexible"]}
-          text={["Disabled", "Always-On", "Flexible"]}
-          entry={settings.navigationBar}
-        />
-      </div>
       <div className="border-primary border-0.4 border-opacity-20" />
       <div className="md:flex md:items-center my-4 ">
         <div
@@ -271,21 +221,15 @@ export default function MenuEntriesSettings() {
             </div>
             <SettingsFlip
               key={item}
-              onClick={
-                item === "disableComments" && securityCommentShutDown
-                  ? (status: boolean) => {}
-                  : (status: boolean) => {
-                      updateSettings({
-                        [item]: status,
-                      } as Partial<SettingsState>);
-                    }
-              }
+              onClick={(status: boolean) => {
+                updateSettings({
+                  [item]: status,
+                } as Partial<SettingsState>);
+              }}
               state={
-                item === "disableComments" && securityCommentShutDown
-                  ? true
-                  : ((settings as unknown as Record<string, unknown>)[
-                      item
-                    ] as boolean)
+                (settings as unknown as Record<string, unknown>)[
+                  item
+                ] as boolean
               }
             />
           </div>

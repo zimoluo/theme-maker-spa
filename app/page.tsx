@@ -1,32 +1,20 @@
-import HeaderText from "@/components/mainPage/HeaderText";
-import SocialMediaButtons from "@/components/mainPage/SocialMediaButtons";
-import HomeSecretText from "./HomeSecretText";
-import HomeContent from "./HomeContent";
+import ReadingBlur from "@/components/widgets/ReadingBlur";
 import { Metadata } from "next";
+import ThemeMakerWindow from "./design/theme-maker/ThemeMakerWindow";
 
 export const metadata: Metadata = {
-  title: "Zimo Web",
-  description: "The personal website of Zimo.",
+  title: "Theme Maker - Zimo Web",
+  description:
+    "Customize the appearance and the aesthetics of Zimo Web using theme profiles.",
+  keywords:
+    "Zimo Web, Zimo Luo, Color, Personal Website, Color Palette, Palette, Theme, Design, Editor, Web app, Theme Editor, Theme Maker, Interactive, Responsive, Online editor",
 };
 
-export default function Home() {
+export default function ThemeMakerPage() {
   return (
     <>
-      <HeaderText
-        title={
-          <>
-            {"Greetings, I\u2019m\u00A0"}
-            <HomeSecretText />
-            {"."}
-          </>
-        }
-        subtitle={"Hello there. I\u2019m glad you made it here."}
-      >
-        <SocialMediaButtons />
-      </HeaderText>
-      <HomeContent />
+      <ReadingBlur className="md:hidden" />
+      <ThemeMakerWindow />
     </>
   );
 }
-
-export const revalidate = 30;

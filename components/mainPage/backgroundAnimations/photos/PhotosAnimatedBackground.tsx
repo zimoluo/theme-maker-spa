@@ -4,7 +4,6 @@ import { useSettings } from "@/components/contexts/SettingsContext";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import photosAnimation from "./photos.module.css";
-import { isWebkit } from "@/lib/browserUtil";
 
 const zimoWallSrc = "/theme/animated-background/photos/zimo-wall.svg";
 const circleSrc = "/theme/animated-background/photos/circle.svg";
@@ -16,12 +15,9 @@ export default function PhotosAnimatedBackground() {
   const { settings } = useSettings();
 
   useEffect(() => {
-    const timer = setTimeout(
-      () => {
-        setEnableAnimation(true);
-      },
-      isWebkit() ? 30000 : 0
-    );
+    const timer = setTimeout(() => {
+      setEnableAnimation(true);
+    }, 30000);
 
     return () => {
       clearTimeout(timer);
