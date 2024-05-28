@@ -22,6 +22,7 @@ const settingsNameMap: { [key in keyof Partial<SettingsState>]: string } = {
   goldSphereAnimationIntensity: "Spinning Intensity",
   customThemeData: "Theme Maker Profile",
   expandThemeMakerWindow: "Expand to Fullscreen",
+  hideThemeMaker: "Hide Theme Maker",
 };
 
 export default function MenuEntriesSettings() {
