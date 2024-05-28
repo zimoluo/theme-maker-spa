@@ -13,7 +13,7 @@ export default function GrassAnimatedBackground() {
     >
       {settings.backgroundRichness === "rich" ? (
         <Image
-          src="/theme/animated-background/grass/bg.svg"
+          src="./theme/animated-background/grass/bg.svg"
           alt="Grass BG"
           height={1000}
           width={1000}
@@ -23,7 +23,7 @@ export default function GrassAnimatedBackground() {
         />
       ) : (
         <Image
-          src="/theme/animated-background/grass/reduced.png"
+          src="./theme/animated-background/grass/reduced.png"
           alt="Grass BG"
           height={1000}
           width={1000}

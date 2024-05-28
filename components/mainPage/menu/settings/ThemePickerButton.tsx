@@ -52,7 +52,7 @@ export default function ThemePickerButton({ theme }: Props) {
         aria-hidden="true"
       />
       <Image
-        src={`/theme/picker/${theme}.svg`}
+        src={`./theme/picker/${theme}.svg`}
         alt={`Use ${theme} theme`}
         height={40}
         width={40}
