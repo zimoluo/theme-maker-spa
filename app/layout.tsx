@@ -10,19 +10,22 @@ import { ToastProvider } from "@/components/contexts/ToastContext";
 import ThemeDataInitializer from "@/components/themeUtil/ThemeDataInitializer";
 import { defaultRobotsMeta } from "@/lib/siteMetadata";
 
-const environment = (process.env.VERCEL_ENV ?? "development").toLowerCase();
+const environment = "development";
 
 export const metadata: Metadata = {
-  title: "Zimo Web",
-  description: "The personal website of Zimo.",
-  metadataBase: new URL("https://www.zimoluo.me/"),
+  title: "Theme Maker of Zimo Web",
+  description:
+    "Customize the appearance and the aesthetics of Zimo Web using theme profiles. Independently hosted.",
+  keywords:
+    "Zimo Web, Zimo Luo, Color, Personal Website, Color Palette, Palette, Theme, Design, Editor, Web app, Theme Editor, Theme Maker, Interactive, Responsive, Online editor",
   robots: defaultRobotsMeta,
   authors: [{ name: "Zimo", url: "https://github.com/zimoluo" }],
   openGraph: {
     type: "website",
     url: baseUrl,
-    title: "Zimo Web",
-    description: "The personal website of Zimo.",
+    title: "Theme Maker of Zimo Web",
+    description:
+      "TCustomize the appearance and the aesthetics of Zimo Web using theme profiles.",
     siteName: "Zimo Web",
   },
   icons: [
@@ -57,7 +60,6 @@ export const metadata: Metadata = {
       sizes: "180x180",
     },
   ],
-  keywords: "Zimo Web, Zimo Luo, Zimo, Personal Website",
 };
 
 export default function RootLayout({
