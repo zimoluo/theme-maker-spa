@@ -7,7 +7,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Theme Maker",
     short_name: "Theme Maker",
     description: "Theme Maker of Zimo Web.",
-    start_url: "/",
+    start_url: "/index.html",
     display: "standalone",
     icons: [
       {
