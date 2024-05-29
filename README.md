@@ -1,3 +1,3 @@
-# Zimo Web
+# Theme Maker
 
-This repo contains the source code of Zimo Web, released under GNU AGPLv3 license. Unless critical issues and/or liabilities are found within the website, please refrain from making pull requests and utilize the [Feedback Form](https://forms.gle/hiowUpHKcd5qpx6v8) instead. All security-related issues must be reported to me privately through my email (abgkings0920@gmail.com).
+Theme Maker of Zimo Web, modded from the original codebase of Zimo Web. All other functionalities have been stripped away; only those related to the Theme Maker is kept. Unofficially hosted [here](https://zimo-web-theme-maker-spa.s3.us-east-2.amazonaws.com/index.html).
