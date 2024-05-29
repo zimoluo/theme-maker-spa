@@ -5,10 +5,10 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import photosAnimation from "./photos.module.css";
 
-const zimoWallSrc = "/theme/animated-background/photos/zimo-wall.svg";
-const circleSrc = "/theme/animated-background/photos/circle.svg";
-const squircleSrc = "/theme/animated-background/photos/squircle.svg";
-const filledSrc = "/theme/animated-background/photos/filled.svg";
+import zimoWallSrc from "@/public/theme/animated-background/photos/zimo-wall.svg";
+import circleSrc from "@/public/theme/animated-background/photos/circle.svg";
+import squircleSrc from "@/public/theme/animated-background/photos/squircle.svg";
+import filledSrc from "@/public/theme/animated-background/photos/filled.svg";
 
 export default function PhotosAnimatedBackground() {
   const [enableAnimation, setEnableAnimation] = useState(false);
@@ -33,8 +33,6 @@ export default function PhotosAnimatedBackground() {
         <Image
           src={zimoWallSrc}
           alt="Zimo Text"
-          height={2000}
-          width={1200}
           className="object-cover w-full h-full"
           placeholder="empty"
           priority={true}
@@ -84,8 +82,6 @@ export default function PhotosAnimatedBackground() {
             />
             <Image
               src={circleSrc}
-              height="0"
-              width="0"
               alt="Stained Glass Pane"
               placeholder="empty"
               priority={true}
@@ -95,8 +91,6 @@ export default function PhotosAnimatedBackground() {
             />
             <Image
               src={circleSrc}
-              height="0"
-              width="0"
               alt="Stained Glass Pane"
               placeholder="empty"
               priority={true}
@@ -108,8 +102,6 @@ export default function PhotosAnimatedBackground() {
             />
             <Image
               src={circleSrc}
-              height="0"
-              width="0"
               alt="Stained Glass Pane"
               placeholder="empty"
               priority={true}
@@ -121,8 +113,6 @@ export default function PhotosAnimatedBackground() {
             />
             <Image
               src={circleSrc}
-              height="0"
-              width="0"
               alt="Stained Glass Pane"
               placeholder="empty"
               priority={true}
@@ -134,8 +124,6 @@ export default function PhotosAnimatedBackground() {
             />
             <Image
               src={circleSrc}
-              height="0"
-              width="0"
               alt="Stained Glass Pane"
               placeholder="empty"
               priority={true}
@@ -188,8 +176,6 @@ export default function PhotosAnimatedBackground() {
             />
             <Image
               src={filledSrc}
-              height="0"
-              width="0"
               alt="Stained Glass Pane"
               placeholder="empty"
               priority={true}
@@ -199,8 +185,6 @@ export default function PhotosAnimatedBackground() {
             />
             <Image
               src={filledSrc}
-              height="0"
-              width="0"
               alt="Stained Glass Pane"
               placeholder="empty"
               priority={true}
@@ -212,8 +196,6 @@ export default function PhotosAnimatedBackground() {
             />
             <Image
               src={filledSrc}
-              height="0"
-              width="0"
               alt="Stained Glass Pane"
               placeholder="empty"
               priority={true}
@@ -225,8 +207,6 @@ export default function PhotosAnimatedBackground() {
             />
             <Image
               src={filledSrc}
-              height="0"
-              width="0"
               alt="Stained Glass Pane"
               placeholder="empty"
               priority={true}
@@ -238,8 +218,6 @@ export default function PhotosAnimatedBackground() {
             />
             <Image
               src={filledSrc}
-              height="0"
-              width="0"
               alt="Stained Glass Pane"
               placeholder="empty"
               priority={true}
@@ -292,8 +270,6 @@ export default function PhotosAnimatedBackground() {
             />
             <Image
               src={squircleSrc}
-              height="0"
-              width="0"
               alt="Stained Glass Pane"
               placeholder="empty"
               priority={true}
@@ -303,8 +279,6 @@ export default function PhotosAnimatedBackground() {
             />
             <Image
               src={squircleSrc}
-              height="0"
-              width="0"
               alt="Stained Glass Pane"
               placeholder="empty"
               priority={true}
@@ -316,8 +290,6 @@ export default function PhotosAnimatedBackground() {
             />
             <Image
               src={squircleSrc}
-              height="0"
-              width="0"
               alt="Stained Glass Pane"
               placeholder="empty"
               priority={true}
@@ -329,8 +301,6 @@ export default function PhotosAnimatedBackground() {
             />
             <Image
               src={squircleSrc}
-              height="0"
-              width="0"
               alt="Stained Glass Pane"
               placeholder="empty"
               priority={true}
@@ -342,8 +312,6 @@ export default function PhotosAnimatedBackground() {
             />
             <Image
               src={squircleSrc}
-              height="0"
-              width="0"
               alt="Stained Glass Pane"
               placeholder="empty"
               priority={true}
