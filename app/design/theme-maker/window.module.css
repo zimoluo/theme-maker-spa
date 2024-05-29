@@ -20,6 +20,10 @@
   }
 }
 
+.transition {
+  transition: opacity 300ms ease-out;
+}
+
 @media (min-width: 768px) {
   .transition {
     transition: width 300ms ease-out, height 300ms ease-out,
