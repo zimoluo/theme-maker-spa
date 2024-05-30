@@ -26,7 +26,7 @@ export default function MenuEntriesLayout() {
           .{" "}
           <Link
             target="_blank"
-            href="https://www.zimoluo.me/management/terms-of-use-theme-maker-spa"
+            href="https://www.zimoluo.me/management/terms-of-use-theme-maker"
             className="hover:underline underline-offset-2"
           >
             Terms&nbsp;of&nbsp;Use
