@@ -4,6 +4,7 @@ import lollipopConfig from "@/components/theme/config/lollipop";
 import moriConfig from "@/components/theme/config/mori";
 import oasisConfig from "@/components/theme/config/oasis";
 import scintillatingConfig from "@/components/theme/config/scintillating";
+import skyConfig from "@/components/theme/config/sky";
 import springFieldConfig from "@/components/theme/config/springField";
 import vitreousConfig from "@/components/theme/config/vitreous";
 
@@ -29,6 +30,7 @@ export const defaultSettings: SettingsState = {
     scintillatingConfig,
     cherryConfig,
     moriConfig,
+    skyConfig,
   ],
   customThemeIndex: 0,
   regularThemeMakerTheme: themeMakerDefaultTheme,
