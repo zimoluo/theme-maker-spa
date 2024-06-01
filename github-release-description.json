@@ -3,5 +3,10 @@
     "# Changes",
     "",
     "Theme Maker is now managed at this separate repository, which gives access to publishing releases, changing repo description, etc. Automated scripts for building, publishing, and releasing future updates are written."
+  ],
+  "v1.1.0": [
+    "# Changes",
+    "",
+    "Removed the PNG version of the Grass theme's background to greatly reduce build file size."
   ]
 }
