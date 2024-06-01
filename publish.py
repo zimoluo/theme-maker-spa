@@ -69,7 +69,7 @@ def main():
 """
 
     # Write index.html to a file
-    index_path = 'index.html'
+    index_path = 'placeholder-index.html'
     with open(index_path, 'w') as file:
         file.write(index_content)
 
@@ -115,6 +115,8 @@ def main():
     s3_client.upload_file('./out/index.html', BUCKET_NAME, 'index.html', ExtraArgs={
                           'ContentType': 'text/html'})
     print("Final index.html uploaded to S3 bucket.")
+
+    os.remove(index_path)
 
     print("Script execution completed.")
 
