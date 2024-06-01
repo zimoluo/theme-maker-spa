@@ -131,7 +131,7 @@ def main():
             print(f"Unexpected error: {e}. Using default description.")
 
     # Define the release details
-    release_name = f"Release {tag_name}"
+    release_name = f"Theme Maker SPA {tag_name}"
 
     # Create the GitHub release
     release_info = create_github_release(tag_name, release_name, description)
