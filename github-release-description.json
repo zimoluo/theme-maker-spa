@@ -16,5 +16,10 @@
     "# Changes",
     "",
     "Hiding theme maker window now also hides the blur on narrower screens."
+  ],
+  "v1.2.0": [
+    "# Changes",
+    "",
+    "Fixed an issue where some assets were not displaying correctly."
   ]
 }

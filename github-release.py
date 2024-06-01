@@ -17,7 +17,7 @@ def main():
     GITHUB_REPO = os.getenv('GITHUB_REPO')
     GITHUB_API_URL = f'https://api.github.com/repos/{GITHUB_REPO}/releases'
 
-    VERSION = '1.1.4'
+    VERSION = '1.2.0'
 
     # Determine the script to run based on the operating system
     if platform.system() == 'Windows':
