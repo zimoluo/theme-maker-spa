@@ -34,6 +34,12 @@ def main():
         print(f"Error executing shell script: {e}")
         exit(1)
 
+    for root, dirs, files in os.walk('./out'):
+        for file in files:
+            if file in ['.DS_STORE', '.env.local']:
+                os.remove(os.path.join(root, file))
+                print(f"Deleted garbage file: {os.path.join(root, file)}")
+
     # Initialize boto3 S3 client
     s3_client = boto3.client(
         's3',
