@@ -1,0 +1,7 @@
+{
+  "v1.0.0": [
+    "# Changes",
+    "",
+    "Theme Maker is now managed at this separate repository, which gives access to publishing releases, changing repo description, etc. Automated scripts for building, publishing, and releasing future updates are written."
+  ]
+}
