@@ -8,5 +8,6 @@
     "# Changes",
     "",
     "Removed the PNG version of the Grass theme's background to greatly reduce build file size."
-  ]
+  ],
+  "v1.1.1": ["# Changes", "", "Tweaked the opacity of the Cubistic template."]
 }
