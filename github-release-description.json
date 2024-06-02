@@ -28,5 +28,11 @@
     "* Updated the look of the menu sidebar to match the main site's new look.",
     "* Updated the Spring Field template to match the main site.",
     "* The website now refers to itself as `Theme Maker` instead of `Theme Maker of Zimo Web`."
+  ],
+  "v1.3.1": [
+    "# Changes",
+    "",
+    "* Updated the look of the menu sidebar.",
+    "* Fixed an issue where a horizontal line in the menu sidebar is duplicated."
   ]
 }

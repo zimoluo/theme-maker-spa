@@ -51,7 +51,7 @@ export default function MenuEntriesSettings() {
 
   return (
     <>
-      <div className="md:flex md:items-center my-4 ">
+      <div className="md:flex md:items-center">
         <div className={`text-lg md:text-xl ${menuStyle.entryMinWidth}`}>
           {settingsNameMap["pageTheme"]}
         </div>
@@ -73,7 +73,7 @@ export default function MenuEntriesSettings() {
         </div>
       </div>
       <div className="border-primary border-0.4 border-opacity-20" />
-      <div className="md:flex md:items-center my-4 ">
+      <div className="md:flex md:items-center">
         <div className={`text-lg md:text-xl ${menuStyle.entryMinWidth}`}>
           {settingsNameMap["customThemeData"]}
         </div>
@@ -84,7 +84,7 @@ export default function MenuEntriesSettings() {
         </div>
       </div>
       <div className="border-primary border-0.4 border-opacity-20" />
-      <div className="md:flex md:items-center my-4 ">
+      <div className="md:flex md:items-center">
         <div
           className={`md:flex-grow text-lg md:text-xl ${menuStyle.entryMinWidth}`}
         >
@@ -102,7 +102,7 @@ export default function MenuEntriesSettings() {
         />
       </div>
       <div className="border-primary border-0.4 border-opacity-20" />
-      <div className="md:flex md:items-center my-4 ">
+      <div className="md:flex md:items-center">
         <div
           className={`md:flex-grow text-lg md:text-xl ${menuStyle.entryMinWidth} mb-4 md:mb-0`}
         >
@@ -113,7 +113,7 @@ export default function MenuEntriesSettings() {
       <div className="border-primary border-0.4 border-opacity-20" />
       {animationKey === "projects" && (
         <>
-          <div className="md:flex md:items-center my-4 ">
+          <div className="md:flex md:items-center">
             <div
               className={`md:flex-grow text-lg md:text-xl ${
                 menuStyle.entryMinWidth
@@ -146,7 +146,7 @@ export default function MenuEntriesSettings() {
       )}
       {animationKey === "birthday" && (
         <>
-          <div className="md:flex md:items-center my-4 ">
+          <div className="md:flex md:items-center">
             <div
               className={`md:flex-grow text-lg md:text-xl ${
                 menuStyle.entryMinWidth
@@ -179,7 +179,7 @@ export default function MenuEntriesSettings() {
       )}
       {animationKey === "gold" && (
         <>
-          <div className="md:flex md:items-center my-4 ">
+          <div className="md:flex md:items-center">
             <div
               className={`md:flex-grow text-lg md:text-xl ${menuStyle.entryMinWidth}`}
             >
@@ -201,7 +201,7 @@ export default function MenuEntriesSettings() {
       )}
       {settingsArray.map((item, index, array) => (
         <React.Fragment key={item}>
-          <div className="flex items-center my-4 ">
+          <div className="flex items-center">
             <div className="flex-grow text-lg md:text-xl ml-1">
               {settingsNameMap[item as keyof SettingsState]}
             </div>
