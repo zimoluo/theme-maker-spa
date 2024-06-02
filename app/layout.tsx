@@ -13,7 +13,7 @@ import { defaultRobotsMeta } from "@/lib/siteMetadata";
 const environment = "development";
 
 export const metadata: Metadata = {
-  title: "Theme Maker of Zimo Web",
+  title: "Theme Maker",
   description:
     "Customize the appearance and the aesthetics of Zimo Web using theme profiles. Independently hosted.",
   keywords:
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: baseUrl,
-    title: "Theme Maker of Zimo Web",
+    title: "Theme Maker",
     description:
-      "TCustomize the appearance and the aesthetics of Zimo Web using theme profiles.",
+      "Customize the appearance and the aesthetics of Zimo Web using theme profiles.",
     siteName: "Zimo Web",
   },
   icons: [
