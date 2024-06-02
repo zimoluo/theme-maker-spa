@@ -9,14 +9,11 @@ interface Props {
 }
 
 export default function NavbarWrapper({ menuContent }: Props) {
-  const [navbarExpanded, setNavbarExpanded] = useState(true);
-
   const [menuOpen, setMenuOpen] = useState(false);
   const [menuButtonRotation, setMenuButtonRotation] = useState(false);
   const [menuButtonTranslation, setMenuButtonTranslation] = useState(false);
 
   const openMenu = () => {
-    setNavbarExpanded(true);
     setMenuOpen(true);
 
     setMenuButtonTranslation(true);
@@ -26,7 +23,6 @@ export default function NavbarWrapper({ menuContent }: Props) {
   };
 
   const restoreNavbar = () => {
-    setNavbarExpanded(true);
     setMenuOpen(false);
 
     setMenuButtonRotation(false);
@@ -41,9 +37,7 @@ export default function NavbarWrapper({ menuContent }: Props) {
         {menuContent}
       </MenuSlideWrapper>
       <button
-        className={`fixed top-3 right-4 h-6 w-auto aspect-square hover:scale-110 transition-transform duration-300 z-40 ease-out ${
-          navbarExpanded || menuOpen ? "" : `-translate-y-14`
-        } `}
+        className="fixed top-3 right-4 h-6 w-auto aspect-square hover:scale-110 transition-transform duration-300 z-40 ease-out"
         onClick={menuOpen ? restoreNavbar : openMenu}
         id="menu-button"
       >
