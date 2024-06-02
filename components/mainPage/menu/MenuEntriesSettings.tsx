@@ -102,7 +102,6 @@ export default function MenuEntriesSettings() {
         />
       </div>
       <div className="border-primary border-0.4 border-opacity-20" />
-      <div className="border-primary border-0.4 border-opacity-20" />
       <div className="md:flex md:items-center my-4 ">
         <div
           className={`md:flex-grow text-lg md:text-xl ${menuStyle.entryMinWidth} mb-4 md:mb-0`}
