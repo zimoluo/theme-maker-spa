@@ -21,5 +21,12 @@
     "# Changes",
     "",
     "Fixed an issue where some assets were not displaying correctly."
+  ],
+  "v1.3.0": [
+    "# Changes",
+    "",
+    "* Updated the look of the menu sidebar to match the main site's new look.",
+    "* Updated the Spring Field template to match the main site.",
+    "* The website now refers to itself as `Theme Maker` instead of `Theme Maker of Zimo Web`."
   ]
 }
