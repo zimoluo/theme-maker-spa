@@ -46,5 +46,10 @@
     "# Changes",
     "",
     "Changed the `robot.txt` policy to allow everything."
+  ],
+  "v1.4.1": [
+    "# Changes",
+    "",
+    "Fixed a minor issue in the rendering of favicon."
   ]
 }
