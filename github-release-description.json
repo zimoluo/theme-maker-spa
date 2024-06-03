@@ -40,6 +40,11 @@
   "v1.3.4": [
     "# Changes",
     "",
-    "Fix an issue where the hide theme maker window setting does not disable interactions."
+    "Fixed an issue where the hide theme maker window setting does not disable interactions."
+  ],
+  "v1.4.0": [
+    "# Changes",
+    "",
+    "Changed the `robot.txt` policy to allow everything."
   ]
 }
