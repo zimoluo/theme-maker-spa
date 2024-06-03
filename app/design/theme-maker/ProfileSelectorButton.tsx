@@ -97,7 +97,9 @@ export default function ProfileSelectorButton({
             onClick={safelyChangeIndex}
           />
           <button
-            className={`${selectorStyle.crossClick} h-auto aspect-square pointer-events-auto relative`}
+            className={`${selectorStyle.crossClick} h-auto aspect-square ${
+              settings.hideThemeMaker ? "" : "pointer-events-auto"
+            } relative`}
             onClick={removeThisProfile}
           >
             <CrossIcon

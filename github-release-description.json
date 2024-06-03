@@ -36,5 +36,10 @@
     "* Fixed an issue where a horizontal line in the menu sidebar is duplicated."
   ],
   "v1.3.2": ["# Changes", "", "Slightly updated the look of the menu sidebar."],
-  "v1.3.3": ["# Changes", "", "Further updated the look of the menu sidebar."]
+  "v1.3.3": ["# Changes", "", "Further updated the look of the menu sidebar."],
+  "v1.3.4": [
+    "# Changes",
+    "",
+    "Fix an issue where the hide theme maker window setting does not disable interactions."
+  ]
 }

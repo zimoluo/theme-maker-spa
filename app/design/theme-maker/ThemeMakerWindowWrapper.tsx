@@ -19,7 +19,9 @@ export default function ThemeMakerWindowWrapper({ children }: Props) {
       } ${
         isFullscreen ? windowStyle.fullscreen : windowStyle.sizing
       } bg-widget-80 md:bg-widget-40 md:backdrop-blur-xl md:overflow-hidden ${
-        settings.hideThemeMaker ? "opacity-0" : "opacity-100"
+        settings.hideThemeMaker
+          ? "opacity-0 pointer-events-none select-none"
+          : "opacity-100"
       }`}
     >
       {children}
