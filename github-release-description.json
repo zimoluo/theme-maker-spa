@@ -34,5 +34,6 @@
     "",
     "* Updated the look of the menu sidebar.",
     "* Fixed an issue where a horizontal line in the menu sidebar is duplicated."
-  ]
+  ],
+  "v1.3.2": ["# Changes", "", "Slightly updated the look of the menu sidebar."]
 }
