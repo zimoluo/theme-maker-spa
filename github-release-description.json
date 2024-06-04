@@ -51,5 +51,10 @@
     "# Changes",
     "",
     "Fixed a minor issue in the rendering of favicon."
+  ],
+  "v1.4.2": [
+    "# Changes",
+    "",
+    "Fixed another minor issue in the rendering of favicon."
   ]
 }
