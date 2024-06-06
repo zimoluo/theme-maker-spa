@@ -61,5 +61,11 @@
     "# Changes",
     "",
     "Fixed another issue in the rendering of favicon."
+  ],
+  "v1.5.0": [
+    "# Changes",
+    "",
+    "* Added the optimize profile export setting.",
+    "* * Profiles can now be exported in an optimized format, at the cost of losing some data that might otherwise be useful for editing."
   ]
 }
