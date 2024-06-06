@@ -12,6 +12,7 @@ interface SettingsState {
   regularThemeMakerTheme: ThemeKey;
   expandThemeMakerWindow: boolean;
   hideThemeMaker: boolean;
+  optimizeProfileExport: boolean;
 }
 
 type NotificationStyle = "disabled" | "toast" | "banner";

@@ -36,4 +36,5 @@ export const defaultSettings: SettingsState = {
   regularThemeMakerTheme: themeMakerDefaultTheme,
   expandThemeMakerWindow: false,
   hideThemeMaker: false,
+  optimizeProfileExport: false,
 };

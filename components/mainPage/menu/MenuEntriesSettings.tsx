@@ -23,6 +23,7 @@ const settingsNameMap: { [key in keyof Partial<SettingsState>]: string } = {
   customThemeData: "Theme Maker Profile",
   expandThemeMakerWindow: "Expand to Fullscreen",
   hideThemeMaker: "Hide Theme Maker",
+  optimizeProfileExport: "Optimize Profile Export",
 };
 
 export default function MenuEntriesSettings() {
@@ -36,6 +37,7 @@ export default function MenuEntriesSettings() {
     let initialSettings: (keyof Partial<SettingsState>)[] = [
       "expandThemeMakerWindow",
       "hideThemeMaker",
+      "optimizeProfileExport",
     ];
 
     if (animationKey === "blog") {
