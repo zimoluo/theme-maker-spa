@@ -5,7 +5,7 @@
 @media (min-width: 768px) {
   .sizing {
     width: max(5rem, 80vw);
-    height: max(14rem, calc(100vh - 9rem));
+    height: max(14rem, calc(100vh - 8rem));
   }
 }
 
@@ -16,7 +16,7 @@
 @media (min-width: 768px) {
   .fullscreen {
     width: 100vw;
-    height: calc(100vh - 5.5rem);
+    height: calc(100vh - 3rem);
   }
 }
 
@@ -27,6 +27,7 @@
 @media (min-width: 768px) {
   .transition {
     transition: width 300ms ease-out, height 300ms ease-out,
-      opacity 300ms ease-out;
+      opacity 300ms ease-out, margin-top 300ms ease-out,
+      margin-bottom 300ms ease-out;
   }
 }
