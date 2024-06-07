@@ -13,6 +13,7 @@ type Props = {
 
 const utilityTextMap: Record<MenuUtility, string> = {
   resetSettings: "Reset Settings to Default",
+  resetProfiles: "Reset All Theme Profiles",
 };
 
 // Used for next rendering only. Typically involves those that modify settings.
@@ -20,6 +21,11 @@ const utilityToastMap: Record<MenuUtility, ToastEntry | null> = {
   resetSettings: {
     title: "Settings",
     description: "All settings have been reset.",
+    icon: "settings",
+  },
+  resetProfiles: {
+    title: "Settings",
+    description: "All profiles have been reset.",
     icon: "settings",
   },
 };
@@ -39,11 +45,19 @@ export default function MenuUtilityButton({
     () => void | boolean | Promise<boolean | void>
   > = {
     resetSettings,
+    resetProfiles,
   };
 
   function resetSettings() {
-    const { ...defaultSettingsWithoutSync } = structuredClone(defaultSettings);
+    const { customThemeData, customThemeIndex, ...defaultSettingsWithoutSync } =
+      structuredClone(defaultSettings);
     updateSettings(defaultSettingsWithoutSync);
+  }
+
+  function resetProfiles() {
+    const { customThemeData, customThemeIndex } =
+      structuredClone(defaultSettings);
+    updateSettings({ customThemeData, customThemeIndex });
   }
 
   async function performAction() {

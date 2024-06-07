@@ -1,3 +1,3 @@
 type NavigationKey = "themeMaker";
 
-type MenuUtility = "resetSettings";
+type MenuUtility = "resetSettings" | "resetProfiles";
