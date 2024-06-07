@@ -67,5 +67,11 @@
     "",
     "* Added the optimize profile export setting.",
     "* * Profiles can now be exported in an optimized format, at the cost of losing some data that might otherwise be useful for editing."
+  ],
+  "v1.5.1": [
+    "# Changes",
+    "",
+    "* Made the Theme Maker window slightly bigger.",
+    "* Significantly improved fullscreen editing experience."
   ]
 }
