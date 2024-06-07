@@ -73,5 +73,6 @@
     "",
     "* Made the Theme Maker window slightly bigger.",
     "* Significantly improved fullscreen editing experience."
-  ]
+  ],
+  "v1.5.2": ["# Changes", "", "Even better fullscreen transition."]
 }
