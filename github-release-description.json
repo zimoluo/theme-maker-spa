@@ -80,5 +80,10 @@
     "",
     "* Reset settings button no longer resets profiles.",
     "* A new reset profiles button has been added to specifically reset profiles."
+  ],
+  "v1.6.1": [
+    "# Changes",
+    "",
+    "Changed the wording of the reset profiles button."
   ]
 }
