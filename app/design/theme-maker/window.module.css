@@ -28,6 +28,7 @@
   .transition {
     transition: width 300ms ease-out, height 300ms ease-out,
       opacity 300ms ease-out, margin-top 300ms ease-out,
-      margin-bottom 300ms ease-out;
+      margin-bottom 300ms ease-out, box-shadow 300ms ease-out,
+      border-radius 300ms ease-out;
   }
 }
