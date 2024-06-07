@@ -74,5 +74,11 @@
     "* Made the Theme Maker window slightly bigger.",
     "* Significantly improved fullscreen editing experience."
   ],
-  "v1.5.2": ["# Changes", "", "Even better fullscreen transition."]
+  "v1.5.2": ["# Changes", "", "Even better fullscreen transition."],
+  "v1.6.0": [
+    "# Changes",
+    "",
+    "* Reset settings button no longer resets profiles.",
+    "* A new reset profiles button has been added to specifically reset profiles."
+  ]
 }
