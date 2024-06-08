@@ -110,5 +110,10 @@
     "# Changes",
     "",
     "Further adjustments to the Bewitched theme animated background."
+  ],
+  "v1.7.4": [
+    "# Changes",
+    "",
+    "Fixed an issue where some Theme Maker widgets are missing shadows."
   ]
 }
