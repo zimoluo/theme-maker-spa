@@ -50,6 +50,7 @@ const config: Config = {
         "60": "15rem",
         "96": "24rem",
         "80": "20rem",
+        screen: "100vw",
       },
       spacing: {
         "26": "6.5rem",
