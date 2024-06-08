@@ -1,5 +1,6 @@
 import aboutConfig from "../theme/config/about";
 import autumnalConfig from "../theme/config/autumnal";
+import bewitchedConfig from "../theme/config/bewitched";
 import birthdayConfig from "../theme/config/birthday";
 import blogConfig from "../theme/config/blog";
 import bubblesConfig from "../theme/config/bubbles";
@@ -58,4 +59,5 @@ export const themeKeyMap: Record<ThemeKey, ThemeDataConfig> = {
   verdant: verdantConfig,
   custom: oasisConfig,
   penumbra: penumbraConfig,
+  bewitched: bewitchedConfig,
 };

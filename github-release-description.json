@@ -90,5 +90,10 @@
     "# Changes",
     "",
     "Fixed some minor styling issues regarding the Theme Maker's window."
+  ],
+  "v1.7.0": [
+    "# Changes",
+    "",
+    "Added the Bewitched theme and its animated background."
   ]
 }
