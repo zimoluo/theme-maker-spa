@@ -115,5 +115,10 @@
     "# Changes",
     "",
     "Fixed an issue where some Theme Maker widgets are missing shadows."
+  ],
+  "v1.7.5": [
+    "# Changes",
+    "",
+    "Fixed an issue where the dropdown menu's opening animation is not rendered correctly."
   ]
 }
