@@ -85,5 +85,10 @@
     "# Changes",
     "",
     "Changed the wording of the reset profiles button."
+  ],
+  "v1.6.2": [
+    "# Changes",
+    "",
+    "Fixed some minor styling issues regarding the Theme Maker's window."
   ]
 }
