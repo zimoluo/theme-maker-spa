@@ -125,5 +125,10 @@
     "# Changes",
     "",
     "Changed the rendering of a certain favicons that use backdrop gradient. It now attempts to use SVG rendering whenever possible."
+  ],
+  "v1.8.1": [
+    "# Changes",
+    "",
+    "Slightly improved the check for the rendering method."
   ]
 }
