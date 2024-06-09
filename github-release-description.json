@@ -120,5 +120,10 @@
     "# Changes",
     "",
     "Fixed an issue where the dropdown menu's opening animation is not rendered correctly."
+  ],
+  "v1.8.0": [
+    "# Changes",
+    "",
+    "Changed the rendering of a certain favicons that use backdrop gradient. It now attempts to use SVG rendering whenever possible."
   ]
 }
