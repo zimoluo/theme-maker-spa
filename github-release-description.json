@@ -136,5 +136,10 @@
     "",
     "Fixed an issue where some favicons rendered using the translation layer method do not appear correctly."
   ],
-  "v1.8.3": ["# Changes", "", "Fixed an issue caused by the previous fix."]
+  "v1.8.3": ["# Changes", "", "Fixed an issue caused by the previous fix."],
+  "v1.8.4": [
+    "# Changes",
+    "",
+    "Reworked the icons of Bubbles, Bewitched, and Gold theme for better consistency."
+  ]
 }
