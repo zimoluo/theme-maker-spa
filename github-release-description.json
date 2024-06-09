@@ -130,5 +130,10 @@
     "# Changes",
     "",
     "Slightly improved the check for the rendering method."
+  ],
+  "v1.8.2": [
+    "# Changes",
+    "",
+    "Fixed an issue where some favicons rendered using the translation layer method do not appear correctly."
   ]
 }
