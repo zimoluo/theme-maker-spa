@@ -135,5 +135,6 @@
     "# Changes",
     "",
     "Fixed an issue where some favicons rendered using the translation layer method do not appear correctly."
-  ]
+  ],
+  "v1.8.3": ["# Changes", "", "Fixed an issue caused by the previous fix."]
 }
