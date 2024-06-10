@@ -3,12 +3,20 @@ import boto3
 import os
 from dotenv import load_dotenv
 from datetime import datetime, timedelta, timezone
-import mimetypes
 import platform
+import zipfile
+
+
+def zip_directory(directory_path, zip_path):
+    with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
+        for root, dirs, files in os.walk(directory_path):
+            for file in files:
+                file_path = os.path.join(root, file)
+                zipf.write(file_path, os.path.relpath(
+                    file_path, directory_path))
 
 
 def main():
-
     # Load environment variables
     load_dotenv('.env.local')
 
@@ -36,7 +44,7 @@ def main():
 
     for root, dirs, files in os.walk('./out'):
         for file in files:
-            if file in ['.DS_STORE', '.env.local']:
+            if file.endswith(('.DS_Store', '.env.local')):
                 os.remove(os.path.join(root, file))
                 print(f"Deleted garbage file: {os.path.join(root, file)}")
 
@@ -50,7 +58,7 @@ def main():
 
     # Create index.html content
     update_time = (datetime.now(timezone.utc) +
-                   timedelta(minutes=5)).strftime('%Y-%m-%d %H:%M:%S UTC')
+                   timedelta(minutes=1)).strftime('%Y-%m-%d %H:%M:%S UTC')
 
     index_content = f"""
 <!DOCTYPE html>
@@ -76,7 +84,7 @@ def main():
     # Upload index.html to the S3 bucket root
     s3_client.upload_file(index_path, BUCKET_NAME, 'index.html',
                           ExtraArgs={'ContentType': 'text/html'})
-    print("index.html uploaded to S3 bucket.")
+    print("Placeholder index.html uploaded to S3 bucket.")
 
     # List and delete all objects in the S3 bucket except index.html
     objects_to_delete = s3_client.list_objects_v2(Bucket=BUCKET_NAME)
@@ -93,30 +101,18 @@ def main():
         )
         print("Deleted all objects in the S3 bucket except index.html.")
 
-    def get_content_type(file_path):
-        content_type, _ = mimetypes.guess_type(file_path)
-        if content_type is None:
-            content_type = 'binary/octet-stream'
-        return content_type
+    # Create a zip file of the ./out directory
+    zip_path = '_temp_build_to_upload.zip'
+    zip_directory('./out', zip_path)
 
-    # Upload all files in the ./out directory to the S3 bucket root except index.html
-    out_dir = './out'
-    for root, dirs, files in os.walk(out_dir):
-        for file in files:
-            if file == 'index.html':
-                continue
-            file_path = os.path.join(root, file)
-            s3_key = os.path.relpath(file_path, out_dir)
-            s3_client.upload_file(file_path, BUCKET_NAME, s3_key, ExtraArgs={
-                                  'ContentType': get_content_type(file_path)})
-            print(f"Uploaded {file_path} to S3 bucket as {s3_key}.")
+    # Upload the zip file to the S3 bucket
+    s3_client.upload_file(zip_path, BUCKET_NAME, 'out.zip')
+    print("out.zip uploaded to S3 bucket.")
 
-    # Upload index.html at the last
-    s3_client.upload_file('./out/index.html', BUCKET_NAME, 'index.html', ExtraArgs={
-                          'ContentType': 'text/html'})
-    print("Final index.html uploaded to S3 bucket.")
-
+    # Remove the local zip file
+    os.remove(zip_path)
     os.remove(index_path)
+    print(f"Deleted local zip file: {zip_path}")
 
     print("Script execution completed.")
 
