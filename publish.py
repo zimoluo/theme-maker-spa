@@ -58,7 +58,7 @@ def main():
 
     # Create index.html content
     update_time = (datetime.now(timezone.utc) +
-                   timedelta(minutes=5)).strftime('%Y-%m-%d %H:%M:%S UTC')
+                   timedelta(minutes=1)).strftime('%Y-%m-%d %H:%M:%S UTC')
 
     index_content = f"""
 <!DOCTYPE html>
