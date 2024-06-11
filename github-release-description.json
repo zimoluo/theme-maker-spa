@@ -146,5 +146,10 @@
     "# Changes",
     "",
     "Slightly tweaked the Halloween theme animated background."
+  ],
+  "v1.8.6": [
+    "# Changes",
+    "",
+    "Re-release of the previous version to address some vulnerability."
   ]
 }
