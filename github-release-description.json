@@ -151,5 +151,10 @@
     "# Changes",
     "",
     "Re-release of the previous version to address some vulnerability."
+  ],
+  "v1.9.0": [
+    "# Changes",
+    "",
+    "The import button now supports importing multiple profiles at once."
   ]
 }
