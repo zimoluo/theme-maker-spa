@@ -70,7 +70,7 @@ def main():
 </head>
 <body>
     <h1>This website is currently being updated via an automated script.</h1>
-    <p>Please check back and refresh the webpage by {update_time}. The actual completion time might be earlier.</p>
+    <p>Please check back and refresh the webpage by {update_time}. The actual completion might be sooner.</p>
     <p>Thank you for your patience.</p>
 </body>
 </html>
