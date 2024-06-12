@@ -177,5 +177,10 @@
     "# Changes",
     "",
     "Fixed several minor issues in the gradient stops editor module."
+  ],
+  "v1.10.4": [
+    "# Changes",
+    "",
+    "Improved the optimize profile export functionality."
   ]
 }
