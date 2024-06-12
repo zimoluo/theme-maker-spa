@@ -157,5 +157,10 @@
     "",
     "The import button now supports importing multiple profiles at once."
   ],
-  "v1.9.1": ["# Changes", "", "Slight changes to the import button behavior."]
+  "v1.9.1": ["# Changes", "", "Slight changes to the import button behavior."],
+  "v1.10.0": [
+    "# Changes",
+    "",
+    "Added the Underwater theme and its animated background."
+  ]
 }
