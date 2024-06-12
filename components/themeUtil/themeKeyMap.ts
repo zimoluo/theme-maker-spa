@@ -26,6 +26,7 @@ import scintillatingConfig from "../theme/config/scintillating";
 import skyConfig from "../theme/config/sky";
 import starsConfig from "../theme/config/stars";
 import stormConfig from "../theme/config/storm";
+import underwaterConfig from "../theme/config/underwater";
 import verdantConfig from "../theme/config/verdant";
 import vitreousConfig from "../theme/config/vitreous";
 
@@ -60,4 +61,5 @@ export const themeKeyMap: Record<ThemeKey, ThemeDataConfig> = {
   custom: oasisConfig,
   penumbra: penumbraConfig,
   bewitched: bewitchedConfig,
+  underwater: underwaterConfig,
 };

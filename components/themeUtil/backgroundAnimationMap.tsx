@@ -20,6 +20,7 @@ import PixellandAnimatedBackground from "../mainPage/backgroundAnimations/pixell
 import VerdantAnimatedBackground from "../mainPage/backgroundAnimations/verdant/VerdantAnimatedBackground";
 import PenumbraAnimatedBackground from "../mainPage/backgroundAnimations/penumbra/PenumbraAnimatedBackground";
 import BewitchedAnimatedBackground from "../mainPage/backgroundAnimations/bewitched/BewitchedAnimatedBackground";
+import UnderwaterAnimatedBackground from "../mainPage/backgroundAnimations/underwater/UnderwaterAnimatedBackground";
 
 export const backgroundAnimationMap: Record<
   ThemeAnimatedBackgroundKey,
@@ -46,4 +47,5 @@ export const backgroundAnimationMap: Record<
   verdant: <VerdantAnimatedBackground />,
   penumbra: <PenumbraAnimatedBackground />,
   bewitched: <BewitchedAnimatedBackground />,
+  underwater: <UnderwaterAnimatedBackground />,
 };
