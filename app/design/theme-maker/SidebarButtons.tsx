@@ -44,7 +44,7 @@ export default function SidebarButtons() {
     if (themeProfilesArray.length <= 0) {
       updateSettings({
         customThemeData: profilesToInsert,
-        customThemeIndex: 0,
+        customThemeIndex: profilesToInsert.length - 1,
       });
       return true;
     }
@@ -60,7 +60,7 @@ export default function SidebarButtons() {
 
     updateSettings({
       customThemeData: updatedProfileArray,
-      customThemeIndex: settings.customThemeIndex + 1,
+      customThemeIndex: settings.customThemeIndex + profilesToInsert.length,
     });
 
     return true;

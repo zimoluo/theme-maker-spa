@@ -156,5 +156,6 @@
     "# Changes",
     "",
     "The import button now supports importing multiple profiles at once."
-  ]
+  ],
+  "v1.9.1": ["# Changes", "", "Slight changes to the import button behavior."]
 }
