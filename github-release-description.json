@@ -172,5 +172,10 @@
     "# Changes",
     "",
     "Further tweaked the underwater theme meta theme color."
+  ],
+  "v1.10.3": [
+    "# Changes",
+    "",
+    "Fixed several minor issues in the gradient stops editor module."
   ]
 }
