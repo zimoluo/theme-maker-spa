@@ -163,5 +163,14 @@
     "",
     "Added the Underwater theme and its animated background."
   ],
-  "v1.10.1": ["# Changes", "", "Tweaked the underwater theme meta theme color."]
+  "v1.10.1": [
+    "# Changes",
+    "",
+    "Tweaked the underwater theme meta theme color."
+  ],
+  "v1.10.2": [
+    "# Changes",
+    "",
+    "Further tweaked the underwater theme meta theme color."
+  ]
 }
