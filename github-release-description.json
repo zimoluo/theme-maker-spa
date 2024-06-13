@@ -182,5 +182,10 @@
     "# Changes",
     "",
     "Improved the optimize profile export functionality."
+  ],
+  "v1.11.0": [
+    "# Changes",
+    "",
+    "Added the prefer SVG rendering if possible to backdrop mode of the favicon configuration."
   ]
 }
