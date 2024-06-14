@@ -192,5 +192,11 @@
     "# Changes",
     "",
     "Updated the type guard to reflect the recent changes."
+  ],
+  "v1.12.0": [
+    "# Changes",
+    "",
+    "* Fixed an issue where the animated background of Sky, Storm, Pixelland, and Verdant theme does not render correctly on local sessions.",
+    "* Removed the animation of the sun in the Pixelland theme's animated background. This is done to fix the issue as mentioned."
   ]
 }
