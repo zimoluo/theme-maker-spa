@@ -24,6 +24,7 @@ const settingsNameMap: { [key in keyof Partial<SettingsState>]: string } = {
   expandThemeMakerWindow: "Expand to Fullscreen",
   hideThemeMaker: "Hide Theme Maker",
   optimizeProfileExport: "Optimize Profile Export",
+  allowExtendedGradientStopsRange: "Allow Extended Gradient",
 };
 
 export default function MenuEntriesSettings() {
@@ -38,6 +39,7 @@ export default function MenuEntriesSettings() {
       "expandThemeMakerWindow",
       "hideThemeMaker",
       "optimizeProfileExport",
+      "allowExtendedGradientStopsRange",
     ];
 
     if (animationKey === "blog") {
@@ -197,7 +199,7 @@ export default function MenuEntriesSettings() {
               text={["Gentle", "Steady", "Dynamic", "Vibrant", "Blazing"]}
               entry={settings.goldSphereAnimationIntensity}
             />
-          </div>{" "}
+          </div>
           <div className="border-primary border-0.4 border-opacity-20" />
         </>
       )}

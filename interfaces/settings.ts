@@ -13,6 +13,7 @@ interface SettingsState {
   expandThemeMakerWindow: boolean;
   hideThemeMaker: boolean;
   optimizeProfileExport: boolean;
+  allowExtendedGradientStopsRange: boolean;
 }
 
 type NotificationStyle = "disabled" | "toast" | "banner";
