@@ -1,6 +1,6 @@
 {
-  "name": "zimo-web-app-router",
-  "version": "0.1.0",
+  "name": "theme-maker-spa",
+  "version": "1.13.0",
   "private": true,
   "scripts": {
     "dev": "next dev",

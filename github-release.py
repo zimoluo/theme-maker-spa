@@ -17,7 +17,10 @@ def main():
     GITHUB_REPO = os.getenv('GITHUB_REPO')
     GITHUB_API_URL = f'https://api.github.com/repos/{GITHUB_REPO}/releases'
 
-    VERSION = '1.12.0'
+    software_version = ''
+    with open('package.json') as package_json:
+        package_object = json.loads(package_json.read())
+        software_version = package_object['version']
 
     # Determine the script to run based on the operating system
     if platform.system() == 'Windows':
@@ -34,7 +37,6 @@ def main():
         exit(1)
 
     # Function to check if a tag exists on GitHub
-
     def tag_exists(tag_name):
         response = requests.get(
             f'https://api.github.com/repos/{GITHUB_REPO}/git/refs/tags/{tag_name}')
@@ -104,7 +106,7 @@ def main():
             exit(1)
 
     # Get the tag name from the user
-    tag_name = f'v{VERSION}'
+    tag_name = f'v{software_version}'
 
     # Check if the tag already exists
     if tag_exists(tag_name):
