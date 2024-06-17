@@ -208,5 +208,6 @@
     "* Added the circle radial gradient mode and interface.",
     "* Added the Penumbra theme into the Theme Maker templates.",
     "* Removed a few themes from the Theme Maker templates."
-  ]
+  ],
+  "v1.13.1": ["# Changes", "", "Added the Energize template."]
 }

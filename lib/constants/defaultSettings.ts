@@ -1,8 +1,8 @@
 import cubisticConfig from "@/components/theme/config/cubistic";
+import energizeConfig from "@/components/theme/config/energize";
 import lollipopConfig from "@/components/theme/config/lollipop";
 import oasisConfig from "@/components/theme/config/oasis";
 import penumbraConfig from "@/components/theme/config/penumbra";
-import scintillatingConfig from "@/components/theme/config/scintillating";
 import skyConfig from "@/components/theme/config/sky";
 import springFieldConfig from "@/components/theme/config/springField";
 import vitreousConfig from "@/components/theme/config/vitreous";
@@ -23,10 +23,10 @@ export const defaultSettings: SettingsState = {
   customThemeData: [
     lollipopConfig,
     cubisticConfig,
+    energizeConfig,
     oasisConfig,
     springFieldConfig,
     vitreousConfig,
-    scintillatingConfig,
     penumbraConfig,
     skyConfig,
   ],
