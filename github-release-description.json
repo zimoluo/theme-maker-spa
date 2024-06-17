@@ -198,5 +198,15 @@
     "",
     "* Fixed an issue where the animated background of Sky, Storm, Pixelland, and Verdant theme does not render correctly on local sessions.",
     "* Removed the animation of the sun in the Pixelland theme's animated background. This is done to fix the issue as mentioned."
+  ],
+  "v1.13.0": [
+    "# Changes",
+    "",
+    "* Added the allow extended gradient setting.",
+    "* Changed the Pixelland theme's favicon.",
+    "* Removed the Penumbra theme's animated background.",
+    "* Added the circle radial gradient mode and interface.",
+    "* Added the Penumbra theme into the Theme Maker templates.",
+    "* Removed a few themes from the Theme Maker templates."
   ]
 }

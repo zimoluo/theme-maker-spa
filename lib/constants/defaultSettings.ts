@@ -1,8 +1,7 @@
-import cherryConfig from "@/components/theme/config/cherry";
 import cubisticConfig from "@/components/theme/config/cubistic";
 import lollipopConfig from "@/components/theme/config/lollipop";
-import moriConfig from "@/components/theme/config/mori";
 import oasisConfig from "@/components/theme/config/oasis";
+import penumbraConfig from "@/components/theme/config/penumbra";
 import scintillatingConfig from "@/components/theme/config/scintillating";
 import skyConfig from "@/components/theme/config/sky";
 import springFieldConfig from "@/components/theme/config/springField";
@@ -28,8 +27,7 @@ export const defaultSettings: SettingsState = {
     springFieldConfig,
     vitreousConfig,
     scintillatingConfig,
-    cherryConfig,
-    moriConfig,
+    penumbraConfig,
     skyConfig,
   ],
   customThemeIndex: 0,
