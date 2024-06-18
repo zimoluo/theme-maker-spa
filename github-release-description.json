@@ -209,5 +209,10 @@
     "* Added the Penumbra theme into the Theme Maker templates.",
     "* Removed a few themes from the Theme Maker templates."
   ],
-  "v1.13.1": ["# Changes", "", "Added the Energize template."]
+  "v1.13.1": ["# Changes", "", "Added the Energize template."],
+  "v1.13.2": [
+    "# Changes",
+    "",
+    "Improved the dropdown widget in the Theme Maker."
+  ]
 }
