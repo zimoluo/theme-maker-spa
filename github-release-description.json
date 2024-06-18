@@ -214,5 +214,11 @@
     "# Changes",
     "",
     "Improved the dropdown widget in the Theme Maker."
+  ],
+  "v1.14.0": [
+    "# Changes",
+    "",
+    "* The default article blur value is now 24 instead of 8.",
+    "* Changed the blur intensity of some UI elements."
   ]
 }
