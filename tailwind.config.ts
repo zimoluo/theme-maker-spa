@@ -13,7 +13,7 @@ const config: Config = {
         main: ["Helvetica", "Arial", "Verdana", "Roboto", "Segoe UI", "Tahoma"],
       },
       backdropBlur: {
-        reading: "var(--reading-blur, 8px)",
+        reading: "var(--reading-blur)",
       },
       colors: {
         primary: "rgb(var(--color-primary) / <alpha-value>)",

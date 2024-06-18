@@ -18,7 +18,7 @@ export default function ThemeMakerWindowWrapper({ children }: Props) {
         isFullscreen ? "" : "md:my-16 md:rounded-3xl md:shadow-xl"
       } ${
         isFullscreen ? windowStyle.fullscreen : windowStyle.sizing
-      } bg-widget-80 md:bg-widget-40 md:backdrop-blur-xl md:overflow-hidden ${
+      } bg-widget-80 md:bg-widget-40 md:backdrop-blur-2xl md:overflow-hidden ${
         settings.hideThemeMaker
           ? "opacity-0 pointer-events-none select-none"
           : "opacity-100"
