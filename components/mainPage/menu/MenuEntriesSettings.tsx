@@ -26,6 +26,7 @@ const settingsNameMap: { [key in keyof Partial<SettingsState>]: string } = {
   optimizeProfileExport: "Optimize Profile Export",
   allowExtendedGradientStopsRange: "Allow Extended Gradient",
   enableColorInterpolationMethod: "Enable Color Interpolation Method",
+  disableSystemFont: "Disable System Font",
 };
 
 export default function MenuEntriesSettings() {
@@ -42,6 +43,7 @@ export default function MenuEntriesSettings() {
       "optimizeProfileExport",
       "allowExtendedGradientStopsRange",
       "enableColorInterpolationMethod",
+      "disableSystemFont",
     ];
 
     if (animationKey === "blog") {

@@ -9,6 +9,7 @@ import { baseUrl } from "@/lib/constants/navigationFinder";
 import { ToastProvider } from "@/components/contexts/ToastContext";
 import ThemeDataInitializer from "@/components/themeUtil/ThemeDataInitializer";
 import { defaultRobotsMeta } from "@/lib/siteMetadata";
+import SystemUIFontLoader from "@/components/mainPage/SystemUIFontLoader";
 
 const environment = "development";
 
@@ -71,17 +72,19 @@ export default function RootLayout({
     <html lang="en">
       <body className="font-main">
         <SettingsProvider>
-          <ToastProvider>
-            <ThemeDataInitializer>
-              <ThemeApplier>
-                <MainPageFrame>
-                  <MainPageEffect>
-                    <MainPageElements>{children}</MainPageElements>
-                  </MainPageEffect>
-                </MainPageFrame>
-              </ThemeApplier>
-            </ThemeDataInitializer>
-          </ToastProvider>
+          <SystemUIFontLoader>
+            <ToastProvider>
+              <ThemeDataInitializer>
+                <ThemeApplier>
+                  <MainPageFrame>
+                    <MainPageEffect>
+                      <MainPageElements>{children}</MainPageElements>
+                    </MainPageEffect>
+                  </MainPageFrame>
+                </ThemeApplier>
+              </ThemeDataInitializer>
+            </ToastProvider>
+          </SystemUIFontLoader>
         </SettingsProvider>
       </body>
     </html>

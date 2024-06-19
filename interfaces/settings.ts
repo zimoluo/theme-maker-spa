@@ -15,6 +15,7 @@ interface SettingsState {
   optimizeProfileExport: boolean;
   allowExtendedGradientStopsRange: boolean;
   enableColorInterpolationMethod: boolean;
+  disableSystemFont: boolean;
 }
 
 type NotificationStyle = "disabled" | "toast" | "banner";

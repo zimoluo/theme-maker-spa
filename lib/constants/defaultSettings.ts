@@ -37,4 +37,5 @@ export const defaultSettings: SettingsState = {
   optimizeProfileExport: false,
   allowExtendedGradientStopsRange: false,
   enableColorInterpolationMethod: false,
+  disableSystemFont: false,
 };
