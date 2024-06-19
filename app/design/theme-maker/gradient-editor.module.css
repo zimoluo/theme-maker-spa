@@ -6,7 +6,7 @@
   .container {
     display: grid;
     grid-template-columns: minmax(12.5rem, 1fr) minmax(12.5rem, 1fr);
-    grid-template-rows: auto 17rem 24rem;
+    grid-template-rows: auto 17rem auto;
     @apply space-y-0 gap-4;
   }
 
@@ -34,7 +34,7 @@
 @container color-editor-wrapper (min-width: 39.75rem) {
   .container {
     grid-template-columns: 5rem minmax(14rem, 18rem) minmax(16rem, 1fr);
-    grid-template-rows: auto 24rem;
+    grid-template-rows: auto auto;
   }
 
   .container > :nth-child(1) {

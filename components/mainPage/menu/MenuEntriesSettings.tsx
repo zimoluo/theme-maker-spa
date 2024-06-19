@@ -25,6 +25,7 @@ const settingsNameMap: { [key in keyof Partial<SettingsState>]: string } = {
   hideThemeMaker: "Hide Theme Maker",
   optimizeProfileExport: "Optimize Profile Export",
   allowExtendedGradientStopsRange: "Allow Extended Gradient",
+  enableColorInterpolationMethod: "Enable Color Interpolation Method",
 };
 
 export default function MenuEntriesSettings() {
@@ -40,6 +41,7 @@ export default function MenuEntriesSettings() {
       "hideThemeMaker",
       "optimizeProfileExport",
       "allowExtendedGradientStopsRange",
+      "enableColorInterpolationMethod",
     ];
 
     if (animationKey === "blog") {
@@ -55,7 +57,7 @@ export default function MenuEntriesSettings() {
 
   return (
     <>
-      <div className="md:flex md:items-center">
+      <div className="md:flex md:items-center gap-2">
         <div className={`text-lg md:text-xl ${menuStyle.entryMinWidth}`}>
           {settingsNameMap["pageTheme"]}
         </div>
@@ -205,7 +207,7 @@ export default function MenuEntriesSettings() {
       )}
       {settingsArray.map((item, index, array) => (
         <React.Fragment key={item}>
-          <div className="flex items-center">
+          <div className="flex items-center gap-2">
             <div className="flex-grow text-lg md:text-xl ml-1">
               {settingsNameMap[item as keyof SettingsState]}
             </div>

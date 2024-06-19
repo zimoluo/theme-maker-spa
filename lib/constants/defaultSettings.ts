@@ -36,4 +36,5 @@ export const defaultSettings: SettingsState = {
   hideThemeMaker: false,
   optimizeProfileExport: false,
   allowExtendedGradientStopsRange: false,
+  enableColorInterpolationMethod: false,
 };
