@@ -222,5 +222,10 @@
     "* Changed the blur intensity of some UI elements."
   ],
   "v1.15.0": ["# Changes", "", "Added support for color interpolation method."],
-  "v1.15.1": ["# Changes", "", "The preferred font is now the system font."]
+  "v1.15.1": ["# Changes", "", "The preferred font is now the system font."],
+  "v1.15.2": [
+    "# Changes",
+    "",
+    "Slightly tweaked the interpolation editor styling."
+  ]
 }
