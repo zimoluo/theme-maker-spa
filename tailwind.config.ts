@@ -10,7 +10,15 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        main: ["Helvetica", "Arial", "Verdana", "Roboto", "Segoe UI", "Tahoma"],
+        main: [
+          "system-ui",
+          "Helvetica",
+          "Arial",
+          "Verdana",
+          "Roboto",
+          "Segoe UI",
+          "Tahoma",
+        ],
       },
       backdropBlur: {
         reading: "var(--reading-blur)",
