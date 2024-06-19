@@ -227,5 +227,6 @@
     "# Changes",
     "",
     "Slightly tweaked the interpolation editor styling."
-  ]
+  ],
+  "v1.15.3": ["# Changes", "", "Changed 'OKLAB' to 'Oklab.'"]
 }
