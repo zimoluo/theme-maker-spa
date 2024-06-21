@@ -234,5 +234,10 @@
     "",
     "* Slightly changed how the select profile icon is rendered.",
     "* Custom favicons now correctly shows up in the Theme Maker. This is not encountered in normal situations, though."
+  ],
+  "v1.15.5": [
+    "# Changes",
+    "",
+    "Whether the color lookup panel is hidden is now controlled through the settings framework. This means the said state is now saved across sessions."
   ]
 }
