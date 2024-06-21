@@ -239,5 +239,11 @@
     "# Changes",
     "",
     "Whether the color lookup panel is hidden is now controlled through the settings framework. This means the said state is now saved across sessions."
+  ],
+  "v1.15.6": [
+    "# Changes",
+    "",
+    "* Theme Maker SPA version is now displayed in the copyright information area.",
+    "* Changed settings entries to use lowercase."
   ]
 }
