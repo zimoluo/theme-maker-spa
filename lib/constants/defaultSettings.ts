@@ -38,4 +38,5 @@ export const defaultSettings: SettingsState = {
   allowExtendedGradientStopsRange: false,
   enableColorInterpolationMethod: false,
   disableSystemFont: false,
+  hideColorLookupPanel: false,
 };

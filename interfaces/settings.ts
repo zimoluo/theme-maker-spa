@@ -16,6 +16,7 @@ interface SettingsState {
   allowExtendedGradientStopsRange: boolean;
   enableColorInterpolationMethod: boolean;
   disableSystemFont: boolean;
+  hideColorLookupPanel: boolean;
 }
 
 type NotificationStyle = "disabled" | "toast" | "banner";

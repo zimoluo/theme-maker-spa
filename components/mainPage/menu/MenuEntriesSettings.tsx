@@ -7,7 +7,6 @@ import SettingsSlider from "./settings/SettingsSlider";
 import menuStyle from "./menu.module.css";
 import { useTheme } from "@/components/contexts/ThemeContext";
 import SettingsThemePicker from "./settings/SettingsThemePicker";
-import { useNavigation } from "@/lib/helperHooks";
 import NotificationStylePicker from "./settings/NotificationStylePicker";
 import ThemeProfileSelector from "@/app/design/theme-maker/ThemeProfileSelector";
 
@@ -27,6 +26,7 @@ const settingsNameMap: { [key in keyof Partial<SettingsState>]: string } = {
   allowExtendedGradientStopsRange: "Allow Extended Gradient",
   enableColorInterpolationMethod: "Enable Color Interpolation Method",
   disableSystemFont: "Disable System Font",
+  hideColorLookupPanel: "Hide Color Lookup Panel",
 };
 
 export default function MenuEntriesSettings() {
@@ -34,10 +34,9 @@ export default function MenuEntriesSettings() {
   const { themeConfig } = useTheme();
   const animationKey = themeConfig.animatedBackgroundKey;
 
-  const currentPage = useNavigation();
-
   const settingsArray: (keyof Partial<SettingsState>)[] = useMemo(() => {
     let initialSettings: (keyof Partial<SettingsState>)[] = [
+      "hideColorLookupPanel",
       "expandThemeMakerWindow",
       "hideThemeMaker",
       "optimizeProfileExport",
@@ -55,7 +54,7 @@ export default function MenuEntriesSettings() {
     }
 
     return initialSettings;
-  }, [currentPage, animationKey]);
+  }, [animationKey]);
 
   return (
     <>
