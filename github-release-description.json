@@ -228,5 +228,11 @@
     "",
     "Slightly tweaked the interpolation editor styling."
   ],
-  "v1.15.3": ["# Changes", "", "Changed 'OKLAB' to 'Oklab.'"]
+  "v1.15.3": ["# Changes", "", "Changed 'OKLAB' to 'Oklab.'"],
+  "v1.15.4": [
+    "# Changes",
+    "",
+    "* Slightly changed how the select profile icon is rendered.",
+    "* Custom favicons now correctly shows up in the Theme Maker. This is not encountered in normal situations, though."
+  ]
 }
