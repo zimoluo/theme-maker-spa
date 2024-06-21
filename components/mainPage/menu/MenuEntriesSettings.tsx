@@ -11,22 +11,22 @@ import NotificationStylePicker from "./settings/NotificationStylePicker";
 import ThemeProfileSelector from "@/app/design/theme-maker/ThemeProfileSelector";
 
 const settingsNameMap: { [key in keyof Partial<SettingsState>]: string } = {
-  backgroundRichness: "Background Richness",
-  disableCenterPainting: "Disable Center Art",
-  disableSoundEffect: "Disable Sound Effect",
-  pageTheme: "Theme Preset",
-  notificationStyle: "Notification Style",
-  floatingCodeSpeed: "Floating Code Rate",
-  flyingBalloonRate: "Birthday Balloon Rate",
-  goldSphereAnimationIntensity: "Spinning Intensity",
-  customThemeData: "Theme Maker Profile",
-  expandThemeMakerWindow: "Expand to Fullscreen",
+  backgroundRichness: "Background richness",
+  disableCenterPainting: "Disable center art",
+  disableSoundEffect: "Disable sound effect",
+  pageTheme: "Theme preset",
+  notificationStyle: "Notification style",
+  floatingCodeSpeed: "Floating code rate",
+  flyingBalloonRate: "Birthday balloon rate",
+  goldSphereAnimationIntensity: "Spinning intensity",
+  customThemeData: "Theme profile",
+  expandThemeMakerWindow: "Expand to fullscreen",
   hideThemeMaker: "Hide Theme Maker",
-  optimizeProfileExport: "Optimize Profile Export",
-  allowExtendedGradientStopsRange: "Allow Extended Gradient",
-  enableColorInterpolationMethod: "Enable Color Interpolation Method",
-  disableSystemFont: "Disable System Font",
-  hideColorLookupPanel: "Hide Color Lookup Panel",
+  optimizeProfileExport: "Optimize profile export",
+  allowExtendedGradientStopsRange: "Allow extended gradient",
+  enableColorInterpolationMethod: "Enable color interpolation method",
+  disableSystemFont: "Disable system font",
+  hideColorLookupPanel: "Hide color lookup panel",
 };
 
 export default function MenuEntriesSettings() {
