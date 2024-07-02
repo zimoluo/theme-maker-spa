@@ -6,6 +6,7 @@ import blogConfig from "../theme/config/blog";
 import bubblesConfig from "../theme/config/bubbles";
 import cherryConfig from "../theme/config/cherry";
 import christmasConfig from "../theme/config/christmas";
+import crimsonConfig from "../theme/config/crimson";
 import glitterConfig from "../theme/config/glitter";
 import goldConfig from "../theme/config/gold";
 import grassConfig from "../theme/config/grass";
@@ -62,4 +63,5 @@ export const themeKeyMap: Record<ThemeKey, ThemeDataConfig> = {
   penumbra: penumbraConfig,
   bewitched: bewitchedConfig,
   underwater: underwaterConfig,
+  crimson: crimsonConfig,
 };

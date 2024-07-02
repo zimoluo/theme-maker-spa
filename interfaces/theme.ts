@@ -29,7 +29,8 @@ type ThemeKey =
   | "custom"
   | "penumbra"
   | "bewitched"
-  | "underwater";
+  | "underwater"
+  | "crimson";
 
 type ThemeAnimatedBackgroundKey =
   | "photos"
@@ -52,7 +53,8 @@ type ThemeAnimatedBackgroundKey =
   | "pixelland"
   | "verdant"
   | "bewitched"
-  | "underwater";
+  | "underwater"
+  | "crimson";
 
 interface ThemeMiscOptions {
   readingBlur?: number;
