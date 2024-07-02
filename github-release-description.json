@@ -245,5 +245,11 @@
     "",
     "* Theme Maker SPA version is now displayed in the copyright information area.",
     "* Changed settings entries to use lowercase."
+  ],
+  "v1.16.0": [
+    "# Changes",
+    "",
+    "* Added the Crimson theme and its animated background.",
+    "* Reordered some themes and animated background in their respective selection panel."
   ]
 }
