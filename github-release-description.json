@@ -251,5 +251,6 @@
     "",
     "* Added the Crimson theme and its animated background.",
     "* Reordered some themes and animated background in their respective selection panel."
-  ]
+  ],
+  "v1.16.1": ["# Changes", "", "Ported the Spookfest theme from the main site."]
 }
