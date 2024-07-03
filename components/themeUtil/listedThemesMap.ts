@@ -21,6 +21,7 @@ export const allListedThemes: ThemeKey[] = [
   "midnight",
   "glitter",
   "stars",
+  "spookfest",
   "halloween",
   "christmas",
   "birthday",

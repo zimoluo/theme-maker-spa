@@ -7,6 +7,7 @@ import bubblesConfig from "../theme/config/bubbles";
 import cherryConfig from "../theme/config/cherry";
 import christmasConfig from "../theme/config/christmas";
 import crimsonConfig from "../theme/config/crimson";
+import eepConfig from "../theme/config/eep";
 import glitterConfig from "../theme/config/glitter";
 import goldConfig from "../theme/config/gold";
 import grassConfig from "../theme/config/grass";
@@ -25,6 +26,7 @@ import projectsConfig from "../theme/config/projects";
 import rainbowConfig from "../theme/config/rainbow";
 import scintillatingConfig from "../theme/config/scintillating";
 import skyConfig from "../theme/config/sky";
+import spookfestConfig from "../theme/config/spookfest";
 import starsConfig from "../theme/config/stars";
 import stormConfig from "../theme/config/storm";
 import underwaterConfig from "../theme/config/underwater";
@@ -62,6 +64,8 @@ export const themeKeyMap: Record<ThemeKey, ThemeDataConfig> = {
   custom: oasisConfig,
   penumbra: penumbraConfig,
   bewitched: bewitchedConfig,
+  spookfest: spookfestConfig,
   underwater: underwaterConfig,
   crimson: crimsonConfig,
+  eep: eepConfig,
 };
