@@ -271,5 +271,10 @@
     "# Changes",
     "",
     "The color of the outline of the favicon can now be edited. This feature was previously supported in the configuration file but was not implemented in the UI."
+  ],
+  "v1.17.1": [
+    "# Changes",
+    "",
+    "Fixed an issue where the Spookfest theme lacks an icon."
   ]
 }
