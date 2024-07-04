@@ -266,5 +266,10 @@
     "# Changes",
     "",
     "Fixed an unexpected behavior when switching from separate gradient to overall gradient in the favicon editor."
+  ],
+  "v1.17.0": [
+    "# Changes",
+    "",
+    "The color of the outline of the favicon can now be edited. This feature was previously supported in the configuration file but was not implemented in the UI."
   ]
 }
