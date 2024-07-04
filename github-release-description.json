@@ -261,5 +261,10 @@
     "# Changes",
     "",
     "Changed how the information at the bottom of the menu section is displayed."
+  ],
+  "v1.16.3": [
+    "# Changes",
+    "",
+    "Fixed an unexpected behavior when switching from separate gradient to overall gradient in the favicon editor."
   ]
 }
