@@ -276,5 +276,10 @@
     "# Changes",
     "",
     "Fixed an issue where the Spookfest theme lacks an icon."
+  ],
+  "v1.17.2": [
+    "# Changes",
+    "",
+    "Slightly improved the favicon outline editor interface."
   ]
 }
