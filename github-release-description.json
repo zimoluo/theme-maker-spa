@@ -281,5 +281,10 @@
     "# Changes",
     "",
     "Slightly improved the favicon outline editor interface."
+  ],
+  "v1.17.3": [
+    "# Changes",
+    "",
+    "Moved the hide theme maker setting to the bottom of the settings panel."
   ]
 }
