@@ -38,11 +38,11 @@ export default function MenuEntriesSettings() {
     let initialSettings: (keyof Partial<SettingsState>)[] = [
       "hideColorLookupPanel",
       "expandThemeMakerWindow",
-      "hideThemeMaker",
       "optimizeProfileExport",
       "allowExtendedGradientStopsRange",
       "enableColorInterpolationMethod",
       "disableSystemFont",
+      "hideThemeMaker",
     ];
 
     if (animationKey === "blog") {
