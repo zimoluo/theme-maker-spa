@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
-import ThemeApplier from "@/components/themeUtil/ThemeApplier";
+import ThemeApplier from "@/components/theme/util/ThemeApplier";
 import MainPageFrame from "@/components/mainPage/MainPageFrame";
 import MainPageElements from "@/components/mainPage/MainPageElements";
 import { SettingsProvider } from "@/components/contexts/SettingsContext";
 import MainPageEffect from "@/components/mainPage/MainPageEffect";
 import { baseUrl } from "@/lib/constants/navigationFinder";
 import { ToastProvider } from "@/components/contexts/ToastContext";
-import ThemeDataInitializer from "@/components/themeUtil/ThemeDataInitializer";
+import ThemeDataInitializer from "@/components/theme/util/ThemeDataInitializer";
 import { defaultRobotsMeta } from "@/lib/siteMetadata";
 import SystemUIFontLoader from "@/components/mainPage/SystemUIFontLoader";
 

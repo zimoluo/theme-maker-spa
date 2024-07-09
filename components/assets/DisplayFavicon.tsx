@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "../contexts/ThemeContext";
-import { customFaviconKeyMap } from "@/components/themeUtil/customFaviconMap";
+import { customFaviconKeyMap } from "@/components/theme/util/customFaviconMap";
 import ConfigFavicon from "./displayFavicon/ConfigFavicon";
 
 interface Props {

@@ -1,5 +1,5 @@
 import themePickerStyle from "./settings-theme-picker.module.css";
-import { allListedThemes } from "@/components/themeUtil/listedThemesMap";
+import { allListedThemes } from "@/components/theme/util/listedThemesMap";
 import ThemePickerButton from "./ThemePickerButton";
 
 interface Props {
