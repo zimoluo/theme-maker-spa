@@ -286,5 +286,10 @@
     "# Changes",
     "",
     "Moved the hide theme maker setting to the bottom of the settings panel."
+  ],
+  "v1.17.4": [
+    "# Changes",
+    "",
+    "Slightly adjusted the theme preset picker button in the settings panel."
   ]
 }
