@@ -296,5 +296,10 @@
     "# Changes",
     "",
     "Changed the appearance of the icon that toggles between theme profile and theme preset."
+  ],
+  "v1.17.6": [
+    "# Changes",
+    "",
+    "Removed certain references to Zimo Web in the SPA."
   ]
 }
