@@ -291,5 +291,10 @@
     "# Changes",
     "",
     "Slightly adjusted the theme preset picker button in the settings panel."
+  ],
+  "v1.17.5": [
+    "# Changes",
+    "",
+    "Changed the appearance of the icon that toggles between theme profile and theme preset."
   ]
 }
