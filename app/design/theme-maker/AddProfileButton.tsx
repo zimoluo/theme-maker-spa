@@ -15,7 +15,7 @@ export default function AddProfileButton() {
   const appendNewProfile = () => {
     if (settings.customThemeData.length >= maxProfileCount) {
       appendToast({
-        title: "Zimo Web",
+        title: "Theme Maker",
         description: `Up to ${maxProfileCount} profile${
           maxProfileCount === 1 ? "" : "s"
         } are allowed.`,

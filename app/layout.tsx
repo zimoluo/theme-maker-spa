@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "Theme Maker",
     description:
       "Customize the appearance and the aesthetics of Zimo Web using theme profiles.",
-    siteName: "Zimo Web",
+    siteName: "Theme Maker",
   },
   icons: [
     {
