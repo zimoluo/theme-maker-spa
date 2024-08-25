@@ -311,5 +311,6 @@
     "# Changes",
     "",
     "Added link to the source code and download in the information section."
-  ]
+  ],
+  "v1.17.9": ["# Changes", "", "Fixed the format of the link added."]
 }

@@ -6,13 +6,18 @@ export default function MenuEntriesInfo() {
       <p>Theme Maker SPA v{process.env.version}</p>
       <p>
         &copy; 2024 Zimo Luo. All rights reserved.{" "}
-        <Link href="https://github.com/zimoluo/theme-maker-spa" target="_blank">
+        <Link
+          target="_blank"
+          href="https://github.com/zimoluo/theme-maker-spa"
+          className="hover:underline underline-offset-2"
+        >
           Source
         </Link>{" "}
         and{" "}
         <Link
-          href="https://github.com/zimoluo/theme-maker-spa/releases"
           target="_blank"
+          href="https://github.com/zimoluo/theme-maker-spa/releases"
+          className="hover:underline underline-offset-2"
         >
           download
         </Link>{" "}
