@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const environment = "development";
+const environment = "production";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {

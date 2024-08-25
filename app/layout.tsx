@@ -11,7 +11,7 @@ import ThemeDataInitializer from "@/components/theme/util/ThemeDataInitializer";
 import { defaultRobotsMeta } from "@/lib/siteMetadata";
 import SystemUIFontLoader from "@/components/mainPage/SystemUIFontLoader";
 
-const environment = "development";
+const environment = "production";
 
 export const metadata: Metadata = {
   title: "Theme Maker",
