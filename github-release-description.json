@@ -306,5 +306,10 @@
     "# Changes",
     "",
     "Updated the site favicon to match the latest render."
+  ],
+  "v1.17.8": [
+    "# Changes",
+    "",
+    "Added link to the source code and download in the information section."
   ]
 }
