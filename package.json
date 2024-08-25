@@ -1,6 +1,6 @@
 {
   "name": "theme-maker-spa",
-  "version": "1.17.6",
+  "version": "1.17.7",
   "private": true,
   "scripts": {
     "dev": "next dev",

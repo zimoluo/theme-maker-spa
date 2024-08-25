@@ -301,5 +301,10 @@
     "# Changes",
     "",
     "Removed certain references to Zimo Web in the SPA."
+  ],
+  "v1.17.7": [
+    "# Changes",
+    "",
+    "Updated the site favicon to match the latest render."
   ]
 }
