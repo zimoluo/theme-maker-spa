@@ -313,5 +313,11 @@
     "Added link to the source code and download in the information section."
   ],
   "v1.17.9": ["# Changes", "", "Fixed the format of the link added."],
-  "v1.18.0": ["# Changes", "", "Added Eep and Vibrant theme."]
+  "v1.18.0": ["# Changes", "", "Added Eep and Vibrant theme."],
+  "v1.19.0": [
+    "# Changes",
+    "",
+    "* Added the ability to set the orientation of linear gradient.",
+    "* Optimized the side menu."
+  ]
 }
