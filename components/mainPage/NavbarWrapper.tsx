@@ -1,8 +1,9 @@
 "use client";
 
-import { ReactNode, useState } from "react";
+import { ReactNode, useState, useRef } from "react";
 import SettingsPanelIcon from "../assets/navigation/SettingsPanelIcon";
 import MenuSlideWrapper from "./menu/MenuSlideWrapper";
+import navbarStyle from "./navbar.module.css";
 
 interface Props {
   menuContent?: ReactNode;
@@ -10,51 +11,60 @@ interface Props {
 
 export default function NavbarWrapper({ menuContent }: Props) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [menuButtonRotation, setMenuButtonRotation] = useState(false);
-  const [menuButtonTranslation, setMenuButtonTranslation] = useState(false);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
 
   const openMenu = () => {
     setMenuOpen(true);
-
-    setMenuButtonTranslation(true);
-    setTimeout(() => {
-      setMenuButtonRotation(true);
-    }, 100);
   };
 
   const restoreNavbar = () => {
     setMenuOpen(false);
-
-    setMenuButtonRotation(false);
-    setTimeout(() => {
-      setMenuButtonTranslation(false);
-    }, 100);
   };
 
   return (
     <>
-      <MenuSlideWrapper onClose={restoreNavbar} isOpen={menuOpen}>
+      <MenuSlideWrapper
+        onClose={restoreNavbar}
+        isOpen={menuOpen}
+        menuButtonRef={menuButtonRef}
+      >
         {menuContent}
       </MenuSlideWrapper>
       <button
         className="fixed top-3 right-4 h-6 w-auto aspect-square hover:scale-110 transition-transform duration-300 z-40 ease-out"
         onClick={menuOpen ? restoreNavbar : openMenu}
-        id="menu-button"
+        ref={menuButtonRef}
       >
-        <SettingsPanelIcon
-          className={`absolute h-6 w-auto ${
-            menuButtonTranslation ? "-translate-y-1/2" : "-translate-y-1/3"
-          } ${
-            menuButtonRotation ? "-rotate-45" : ""
-          } pointer-events-none aspect-square transition-all duration-150`}
-        />
-        <SettingsPanelIcon
-          className={`absolute h-6 w-auto ${
-            menuButtonTranslation ? "-translate-y-1/2" : "-translate-y-2/3"
-          } ${
-            menuButtonRotation ? "rotate-45" : ""
-          } pointer-events-none aspect-square transition-all duration-150`}
-        />
+        <div
+          className={`absolute pointer-events-none ${
+            menuOpen
+              ? navbarStyle.menuButtonTranslationOpen
+              : navbarStyle.menuButtonTranslationClosedUpper
+          } ${navbarStyle.menuButton}`}
+        >
+          <SettingsPanelIcon
+            className={`h-6 w-auto ${
+              menuOpen
+                ? navbarStyle.menuButtonRotationOpenUpper
+                : navbarStyle.menuButtonRotationClosed
+            } aspect-square ${navbarStyle.menuButton}`}
+          />
+        </div>
+        <div
+          className={`absolute pointer-events-none ${
+            menuOpen
+              ? navbarStyle.menuButtonTranslationOpen
+              : navbarStyle.menuButtonTranslationClosedLower
+          } ${navbarStyle.menuButton}`}
+        >
+          <SettingsPanelIcon
+            className={`h-6 w-auto ${
+              menuOpen
+                ? navbarStyle.menuButtonRotationOpenLower
+                : navbarStyle.menuButtonRotationClosed
+            } aspect-square ${navbarStyle.menuButton}`}
+          />
+        </div>
       </button>
     </>
   );

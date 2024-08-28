@@ -95,6 +95,12 @@ interface LinearGradientData {
   angle: number; // [0, 359]
 }
 
+interface LinearGradientOrientationData {
+  linearGradientKeyword?: boolean;
+  linearHorizontalOrientation?: LinearGradientHorizontal;
+  linearVerticalOrientation?: LinearGradientVertical;
+}
+
 interface RadialGradientData {
   posX: number; // in percentage
   posY: number;
@@ -113,6 +119,10 @@ type RadialGradientSizeKeyword =
   | "farthest-side"
   | "farthest-corner";
 
+type LinearGradientHorizontal = "left" | "right";
+
+type LinearGradientVertical = "top" | "bottom";
+
 interface CustomGradientData {
   content: string;
 }
@@ -123,6 +133,7 @@ type ColorGradient = {
   disabled?: boolean;
   colorInterpolation?: ColorInterpolationData;
 } & Partial<LinearGradientData> &
+  Partial<LinearGradientOrientationData> &
   Partial<RadialGradientData> &
   Partial<CircleRadialGradientAdditionalData> &
   Partial<CustomGradientData>;

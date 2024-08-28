@@ -210,6 +210,27 @@ function isValidColorGradient(gradient: any): boolean {
     return false;
   }
 
+  if (
+    "linearGradientKeyword" in gradient &&
+    typeof gradient.linearGradientKeyword !== "boolean"
+  ) {
+    return false;
+  }
+
+  if (
+    "linearHorizontalOrientation" in gradient &&
+    !["left", "right"].includes(gradient.linearHorizontalOrientation)
+  ) {
+    return false;
+  }
+
+  if (
+    "linearVerticalOrientation" in gradient &&
+    !["top", "bottom"].includes(gradient.linearVerticalOrientation)
+  ) {
+    return false;
+  }
+
   if (gradient.type !== "custom" && typeof gradient.type !== "string") {
     return false;
   }
