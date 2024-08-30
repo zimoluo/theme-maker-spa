@@ -319,5 +319,10 @@
     "",
     "* Added the ability to set the orientation of linear gradient.",
     "* Optimized the side menu."
+  ],
+  "v1.19.1": [
+    "# Changes",
+    "",
+    "Changed Autumnal and Cherry theme to what they looked like when they were first added."
   ]
 }
