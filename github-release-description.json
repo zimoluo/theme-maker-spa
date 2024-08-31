@@ -324,5 +324,6 @@
     "# Changes",
     "",
     "Changed Autumnal and Cherry theme to what they looked like when they were first added."
-  ]
+  ],
+  "v1.19.2": ["# Changes", "", "Changed an icon in the Theme Maker sidebar."]
 }
