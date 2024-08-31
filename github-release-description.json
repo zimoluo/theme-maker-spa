@@ -337,5 +337,10 @@
     "# Changes",
     "",
     "Made utility buttons on pop up windows slightly bigger."
+  ],
+  "v1.20.3": [
+    "# Changes",
+    "",
+    "Fixed an issue where the theme icon does not render properly."
   ]
 }
