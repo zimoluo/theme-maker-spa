@@ -10,6 +10,7 @@ import { ToastProvider } from "@/components/contexts/ToastContext";
 import ThemeDataInitializer from "@/components/theme/util/ThemeDataInitializer";
 import { defaultRobotsMeta } from "@/lib/siteMetadata";
 import SystemUIFontLoader from "@/components/mainPage/SystemUIFontLoader";
+import { PopUpProvider } from "@/components/contexts/PopUpContext";
 
 const environment = "production";
 
@@ -74,15 +75,17 @@ export default function RootLayout({
         <SettingsProvider>
           <SystemUIFontLoader>
             <ToastProvider>
-              <ThemeDataInitializer>
-                <ThemeApplier>
-                  <MainPageFrame>
-                    <MainPageEffect>
-                      <MainPageElements>{children}</MainPageElements>
-                    </MainPageEffect>
-                  </MainPageFrame>
-                </ThemeApplier>
-              </ThemeDataInitializer>
+              <PopUpProvider>
+                <ThemeDataInitializer>
+                  <ThemeApplier>
+                    <MainPageFrame>
+                      <MainPageEffect>
+                        <MainPageElements>{children}</MainPageElements>
+                      </MainPageEffect>
+                    </MainPageFrame>
+                  </ThemeApplier>
+                </ThemeDataInitializer>
+              </PopUpProvider>
             </ToastProvider>
           </SystemUIFontLoader>
         </SettingsProvider>

@@ -2,73 +2,27 @@
 
 import DuplicateIcon from "@/components/assets/entries/DuplicateIcon";
 import { useSettings } from "@/components/contexts/SettingsContext";
-import { useToast } from "@/components/contexts/ToastContext";
 import ChangeToCustomThemeButton from "./ChangeToCustomThemeButton";
 import EnterFullPageSingleArrow from "@/components/assets/entries/EnterFullPageSingleArrow";
 import ExportIcon from "@/components/assets/entries/ExportIcon";
-import { maxProfileCount } from "@/lib/constants/themeProfiles";
 import FallingStarsIcon from "@/components/assets/entries/FallingStarsIcon";
 import { clampValue, randomIntFromRange } from "@/lib/generalHelper";
 import { intelligentlyGenerateThemeConfig } from "@/lib/themeMaker/colorHelper";
 import { rgb, hsv } from "color-convert";
 import { optimizeExportedProfile } from "@/lib/themeMaker/profileOptimizeTool";
 import ImportProfileButton from "./ImportProfileButton";
+import { useTheme } from "@/components/contexts/ThemeContext";
+import PresetConfigButton from "./PresetConfigButton";
 
 export default function SidebarButtons() {
   const { currentCustomThemeConfig, updateSettings, settings } = useSettings();
-  const { appendToast } = useToast();
+  const { insertThemeProfile } = useTheme();
 
   const isFullscreen = settings.expandThemeMakerWindow;
 
-  const insertProfile = (
-    profile: ThemeDataConfig | ThemeDataConfig[]
-  ): boolean => {
-    const themeProfilesArray = structuredClone(settings.customThemeData);
-    const profilesToInsert = structuredClone(
-      Array.isArray(profile) ? profile : [profile]
-    );
-
-    if (
-      settings.customThemeData.length + profilesToInsert.length >
-      maxProfileCount
-    ) {
-      appendToast({
-        title: "Theme Maker",
-        description: `Up to ${maxProfileCount} profile${
-          maxProfileCount === 1 ? "" : "s"
-        } are allowed.`,
-      });
-      return false;
-    }
-
-    if (themeProfilesArray.length <= 0) {
-      updateSettings({
-        customThemeData: profilesToInsert,
-        customThemeIndex: profilesToInsert.length - 1,
-      });
-      return true;
-    }
-
-    const updatedProfileArray: ThemeDataConfig[] = [
-      ...themeProfilesArray.slice(0, settings.customThemeIndex + 1),
-      ...profilesToInsert,
-      ...themeProfilesArray.slice(
-        settings.customThemeIndex + 1,
-        themeProfilesArray.length
-      ),
-    ];
-
-    updateSettings({
-      customThemeData: updatedProfileArray,
-      customThemeIndex: settings.customThemeIndex + profilesToInsert.length,
-    });
-
-    return true;
-  };
-
   const duplicateProfile = () => {
     const duplicatedProfile = structuredClone(currentCustomThemeConfig);
-    insertProfile(duplicatedProfile);
+    insertThemeProfile(duplicatedProfile);
   };
 
   const generateRandomConfig = () => {
@@ -93,7 +47,7 @@ export default function SidebarButtons() {
       8
     );
 
-    insertProfile(generatedConfig);
+    insertThemeProfile(generatedConfig);
   };
 
   const downloadProfile = (
@@ -193,13 +147,14 @@ export default function SidebarButtons() {
       >
         <FallingStarsIcon className="w-full h-auto aspect-square scale-105" />
       </button>
+      <PresetConfigButton />
       <button
         className="transition-transform hover:scale-110 duration-300 ease-in-out w-7 h-auto aspect-square shrink-0"
         onClick={downloadProfile}
       >
         <ExportIcon className="w-full h-auto aspect-square" />
       </button>
-      <ImportProfileButton insertProfile={insertProfile} />
+      <ImportProfileButton />
     </>
   );
 }

@@ -4,6 +4,7 @@ import { ReactNode, useEffect } from "react";
 import { parseStoredSettings, useSettings } from "../contexts/SettingsContext";
 import ToastBannerReceiver from "../widgets/ToastBannerReceiver";
 import ToastDisplayLegacy from "../widgets/ToastDisplayLegacy";
+import PopUpManager from "../widgets/PopUpManager";
 
 interface Props {
   children?: ReactNode;
@@ -34,6 +35,7 @@ export default function MainPageEffect({ children }: Props) {
   return (
     <>
       {toastComponentMap[settings.notificationStyle]}
+      <PopUpManager />
       {children}
     </>
   );

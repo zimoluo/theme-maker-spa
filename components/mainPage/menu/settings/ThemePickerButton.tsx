@@ -5,17 +5,26 @@ import themePickerStyle from "./settings-theme-picker.module.css";
 import { useSettings } from "@/components/contexts/SettingsContext";
 import Image from "next/image";
 import { allListedThemes } from "@/components/theme/util/listedThemesMap";
+import { useTheme } from "@/components/contexts/ThemeContext";
+import { themeKeyMap } from "@/components/theme/util/themeKeyMap";
 
 interface Props {
   theme: ThemeKey | "random";
+  insertProfile?: boolean;
 }
 
-export default function ThemePickerButton({ theme }: Props) {
+export default function ThemePickerButton({
+  theme,
+  insertProfile = false,
+}: Props) {
   const currentPage = useNavigation();
 
   const { settings, updatePageTheme } = useSettings();
+  const { insertThemeProfile } = useTheme();
 
   const handleThemeChange = () => {
+    let themeToApply: ThemeKey;
+
     if (theme === "random") {
       const currentTheme = settings.pageTheme[currentPage];
 
@@ -29,10 +38,17 @@ export default function ThemePickerButton({ theme }: Props) {
 
       const randomIndex = Math.floor(Math.random() * filteredThemes.length);
       const randomTheme = filteredThemes[randomIndex];
-      updatePageTheme(randomTheme, currentPage);
+      themeToApply = randomTheme;
     } else {
-      updatePageTheme(theme, currentPage);
+      themeToApply = theme;
     }
+
+    if (insertProfile) {
+      insertThemeProfile(themeKeyMap[themeToApply]);
+      return;
+    }
+
+    updatePageTheme(themeToApply, currentPage);
   };
 
   return (
@@ -45,14 +61,14 @@ export default function ThemePickerButton({ theme }: Props) {
         className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ${
           themePickerStyle.selected
         } transition-all duration-300 ease-in-out rounded-full w-0 h-0 select-none pointer-events-none ${
-          settings.pageTheme[currentPage] === theme
+          !insertProfile && settings.pageTheme[currentPage] === theme
             ? "opacity-100"
             : "opacity-0 group-hover:opacity-100"
         }`}
         aria-hidden="true"
       />
       <Image
-        src={`./theme/picker/${theme}.svg`}
+        src={`/theme/picker/${theme}.svg`}
         alt={`Use ${theme} theme`}
         height={40}
         width={40}

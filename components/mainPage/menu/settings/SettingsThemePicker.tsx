@@ -4,15 +4,27 @@ import ThemePickerButton from "./ThemePickerButton";
 
 interface Props {
   className?: string;
+  hasRandom?: boolean;
+  insertProfile?: boolean;
 }
 
-export default function SettingsThemePicker({ className = "" }: Props) {
+export default function SettingsThemePicker({
+  className = "",
+  hasRandom = true,
+  insertProfile = false,
+}: Props) {
   return (
     <section className={`${themePickerStyle.pickerGrid} ${className}`}>
       {allListedThemes.map((theme) => (
-        <ThemePickerButton theme={theme} key={theme} />
+        <ThemePickerButton
+          theme={theme}
+          key={theme}
+          insertProfile={insertProfile}
+        />
       ))}
-      <ThemePickerButton theme="random" />
+      {hasRandom && (
+        <ThemePickerButton theme="random" insertProfile={insertProfile} />
+      )}
     </section>
   );
 }
