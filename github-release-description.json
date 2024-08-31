@@ -329,8 +329,8 @@
   "v1.20.0": [
     "# Changes",
     "",
-    "Added the ability to import profile configurations from preset themes.",
-    "Removed default profile templates from the presets, as they are now unnecessary."
+    "* Added the ability to import profile configurations from preset themes.",
+    "* Removed default profile templates from the presets, as they are now unnecessary."
   ],
   "v1.20.1": ["# Changes", "", "Fixed the layout of the preset import window."]
 }
