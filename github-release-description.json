@@ -343,5 +343,6 @@
     "",
     "Fixed an issue where the theme icon does not render properly."
   ],
-  "v1.20.4": ["# Changes", "", "Slightly improved some animation performance."]
+  "v1.20.4": ["# Changes", "", "Slightly improved some animation performance."],
+  "v1.20.5": ["# Changes", "", "Redesigned the preset themes selector layout."]
 }
