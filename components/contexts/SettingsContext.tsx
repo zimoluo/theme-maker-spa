@@ -73,21 +73,27 @@ export const SettingsProvider = ({
 }) => {
   const [settings, setSettings] = useState<SettingsState>(defaultSettings);
 
-  const updateAndPersistSettings = (newSettings: Partial<SettingsState>) => {
-    const updatedSettings = {
-      ...defaultSettings,
-      ...settings,
-      ...newSettings,
-    };
+  const updateAndPersistSettings = (
+    newSettings: Partial<SettingsState>,
+    callback: (updatedSettings: SettingsState) => void = () => {}
+  ) => {
+    setSettings((prevSettings) => {
+      const updatedSettings = {
+        ...defaultSettings,
+        ...prevSettings,
+        ...newSettings,
+      };
 
-    const filteredSettings = purgeInvalidEntries(
-      updatedSettings
-    ) as SettingsState;
+      const filteredSettings = purgeInvalidEntries(
+        updatedSettings
+      ) as SettingsState;
 
-    setSettings(filteredSettings);
-    localStorage.setItem("websiteSettings", JSON.stringify(filteredSettings));
+      localStorage.setItem("websiteSettings", JSON.stringify(filteredSettings));
 
-    return updatedSettings;
+      callback(filteredSettings);
+
+      return filteredSettings;
+    });
   };
 
   const updateSettings = (
