@@ -350,5 +350,10 @@
     "# Changes",
     "",
     "Improved the copyright information section formatting."
+  ],
+  "v1.20.8": [
+    "# Changes",
+    "",
+    "Ensured that the app appearance is consistent regardless of font size."
   ]
 }
