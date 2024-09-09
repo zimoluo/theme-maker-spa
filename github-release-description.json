@@ -355,5 +355,10 @@
     "# Changes",
     "",
     "Ensured that the app appearance is consistent regardless of font size."
+  ],
+  "v1.20.9": [
+    "# Changes",
+    "",
+    "Improved the animation in the notification style setting entry."
   ]
 }
