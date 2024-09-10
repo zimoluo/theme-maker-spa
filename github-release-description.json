@@ -360,5 +360,6 @@
     "# Changes",
     "",
     "Improved the animation in the notification style setting entry."
-  ]
+  ],
+  "v1.20.10": ["# Changes", "", "Improved the Theme Maker sidebar."]
 }
