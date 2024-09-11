@@ -361,5 +361,10 @@
     "",
     "Improved the animation in the notification style setting entry."
   ],
-  "v1.20.10": ["# Changes", "", "Improved the Theme Maker sidebar."]
+  "v1.20.10": ["# Changes", "", "Improved the Theme Maker sidebar."],
+  "v1.20.11": [
+    "# Changes",
+    "",
+    "Refined the design of the outline color selector in the favicon editor."
+  ]
 }
