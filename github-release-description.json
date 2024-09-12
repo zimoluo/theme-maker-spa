@@ -371,5 +371,11 @@
     "# Changes",
     "",
     "Fixed a minor issue in an animated background."
+  ],
+  "v1.21.0": [
+    "# Changes",
+    "",
+    "* Added data-level support for stacking multiple animated backgrounds.",
+    "* This is not and will not be supported in the visual editor. Using multiple animated backgrounds will significantly hurt the performance."
   ]
 }
