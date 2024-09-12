@@ -366,5 +366,10 @@
     "# Changes",
     "",
     "Refined the design of the outline color selector in the favicon editor."
+  ],
+  "v1.20.12": [
+    "# Changes",
+    "",
+    "Fixed a minor issue in an animated background."
   ]
 }
