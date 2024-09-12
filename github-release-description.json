@@ -382,5 +382,6 @@
     "# Changes",
     "",
     "Improved the handling of multiple animated backgrounds. Note that this feature is not officially supported."
-  ]
+  ],
+  "v1.22.0": ["# Changes", "", "Added the Gallery theme."]
 }
