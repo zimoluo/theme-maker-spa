@@ -383,5 +383,10 @@
     "",
     "Improved the handling of multiple animated backgrounds. Note that this feature is not officially supported."
   ],
-  "v1.22.0": ["# Changes", "", "Added the Gallery theme."]
+  "v1.22.0": ["# Changes", "", "Added the Gallery theme."],
+  "v1.22.1": [
+    "# Changes",
+    "",
+    "Custom favicon no longer shows any options in the favicon editor."
+  ]
 }
