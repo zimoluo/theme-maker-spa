@@ -17,6 +17,7 @@ interface SettingsState {
   enableColorInterpolationMethod: boolean;
   disableSystemFont: boolean;
   hideColorLookupPanel: boolean;
+  disableWindows: boolean;
 }
 
 type NotificationStyle = "disabled" | "toast" | "banner";

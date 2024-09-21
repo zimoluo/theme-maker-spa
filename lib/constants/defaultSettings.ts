@@ -33,4 +33,5 @@ export const defaultSettings: SettingsState = {
   enableColorInterpolationMethod: false,
   disableSystemFont: false,
   hideColorLookupPanel: false,
+  disableWindows: false,
 };

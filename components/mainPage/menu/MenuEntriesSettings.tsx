@@ -27,6 +27,7 @@ const settingsNameMap: { [key in keyof Partial<SettingsState>]: string } = {
   enableColorInterpolationMethod: "Enable color interpolation method",
   disableSystemFont: "Disable system font",
   hideColorLookupPanel: "Hide color lookup panel",
+  disableWindows: "Disable floating windows",
 };
 
 export default function MenuEntriesSettings() {
@@ -41,6 +42,7 @@ export default function MenuEntriesSettings() {
       "optimizeProfileExport",
       "allowExtendedGradientStopsRange",
       "enableColorInterpolationMethod",
+      "disableWindows",
       "disableSystemFont",
       "hideThemeMaker",
     ];

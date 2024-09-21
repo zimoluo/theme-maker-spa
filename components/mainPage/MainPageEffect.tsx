@@ -5,6 +5,7 @@ import { parseStoredSettings, useSettings } from "../contexts/SettingsContext";
 import ToastBannerReceiver from "../widgets/ToastBannerReceiver";
 import ToastDisplayLegacy from "../widgets/ToastDisplayLegacy";
 import PopUpManager from "../widgets/PopUpManager";
+import WindowManager from "../widgets/WindowManager";
 
 interface Props {
   children?: ReactNode;
@@ -34,8 +35,9 @@ export default function MainPageEffect({ children }: Props) {
 
   return (
     <>
-      {toastComponentMap[settings.notificationStyle]}
+      {!settings.disableWindows && <WindowManager />}
       <PopUpManager />
+      {toastComponentMap[settings.notificationStyle]}
       {children}
     </>
   );

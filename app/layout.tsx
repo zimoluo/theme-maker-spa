@@ -11,6 +11,7 @@ import ThemeDataInitializer from "@/components/theme/util/ThemeDataInitializer";
 import { defaultRobotsMeta } from "@/lib/siteMetadata";
 import SystemUIFontLoader from "@/components/mainPage/SystemUIFontLoader";
 import { PopUpProvider } from "@/components/contexts/PopUpContext";
+import { WindowProvider } from "@/components/contexts/WindowContext";
 
 const environment = "production";
 
@@ -75,17 +76,19 @@ export default function RootLayout({
         <SettingsProvider>
           <SystemUIFontLoader>
             <ToastProvider>
-              <PopUpProvider>
-                <ThemeDataInitializer>
-                  <ThemeApplier>
-                    <MainPageFrame>
-                      <MainPageEffect>
-                        <MainPageElements>{children}</MainPageElements>
-                      </MainPageEffect>
-                    </MainPageFrame>
-                  </ThemeApplier>
-                </ThemeDataInitializer>
-              </PopUpProvider>
+              <WindowProvider>
+                <PopUpProvider>
+                  <ThemeDataInitializer>
+                    <ThemeApplier>
+                      <MainPageFrame>
+                        <MainPageEffect>
+                          <MainPageElements>{children}</MainPageElements>
+                        </MainPageEffect>
+                      </MainPageFrame>
+                    </ThemeApplier>
+                  </ThemeDataInitializer>
+                </PopUpProvider>
+              </WindowProvider>
             </ToastProvider>
           </SystemUIFontLoader>
         </SettingsProvider>

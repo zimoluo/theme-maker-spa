@@ -237,12 +237,18 @@ export const useDragAndTouch = ({
 
   const handleDragFinish = (event: MouseEvent) => {
     setIsDragging(false);
-    onFinish(event);
+
+    if (!isTouching) {
+      onFinish(event);
+    }
   };
 
   const handleTouchFinish = (event: TouchEvent) => {
     setIsTouching(false);
-    onFinish(event);
+
+    if (!isDragging) {
+      onFinish(event);
+    }
   };
 
   useEffect(() => {
