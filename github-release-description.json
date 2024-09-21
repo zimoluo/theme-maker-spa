@@ -388,5 +388,11 @@
     "# Changes",
     "",
     "Custom favicon no longer shows any options in the favicon editor."
+  ],
+  "v1.23.0": [
+    "# Changes",
+    "",
+    "* Added the window framework.",
+    "* The Theme Maker is now feature complete. Updates will be released much less often."
   ]
 }
