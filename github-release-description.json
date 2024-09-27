@@ -396,5 +396,6 @@
     "* Theme Maker SPA is now feature complete. Updates will be released much less often."
   ],
   "v1.23.1": ["# Changes", "", "Various improvements to the interface."],
-  "v1.23.2": ["# Changes", "", "Improved the window framework logic."]
+  "v1.23.2": ["# Changes", "", "Improved the window framework logic."],
+  "v1.23.3": ["# Changes", "", "Updated the Next.js version."]
 }
