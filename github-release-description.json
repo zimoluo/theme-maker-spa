@@ -402,5 +402,10 @@
     "# Changes",
     "",
     "Added Plain Gray, Celebration, and Perpetuity theme."
+  ],
+  "v1.24.1": [
+    "# Changes",
+    "",
+    "Theme Maker settings are now stored separately from Zimo Web settings in some cases."
   ]
 }
