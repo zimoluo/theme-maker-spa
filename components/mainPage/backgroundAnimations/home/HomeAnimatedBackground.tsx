@@ -45,36 +45,6 @@ export default function HomeAnimatedBackground() {
         </>
       )}
 
-      {pathname === "/" && (
-        <>
-          <div className="absolute inset-0 -z-10 top-4 hidden md:block pointer-events-none select-none">
-            <Image
-              src="./theme/animated-background/home/zimo-text.svg"
-              height="0"
-              width="0"
-              className="object-cover w-full h-auto"
-              alt="Zimo Text"
-              placeholder="empty"
-              aria-hidden="true"
-              priority={true}
-            />
-          </div>
-
-          <div className="absolute inset-0 -z-10 top-4 md:hidden pointer-events-none select-none">
-            <Image
-              src="./theme/animated-background/home/zimo-text-mobile.svg"
-              height="0"
-              width="0"
-              className="object-cover w-full h-auto"
-              alt="Zimo Text"
-              placeholder="empty"
-              aria-hidden="true"
-              priority={true}
-            />
-          </div>
-        </>
-      )}
-
       {settings.backgroundRichness === "rich" && (
         <div
           className={`fixed inset-0 -z-10 flex items-center justify-center pointer-events-none select-none ${homeStyle.moveTwo}`}

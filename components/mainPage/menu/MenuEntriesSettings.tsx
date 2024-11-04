@@ -27,7 +27,8 @@ const settingsNameMap: { [key in keyof Partial<SettingsState>]: string } = {
   enableColorInterpolationMethod: "Enable color interpolation method",
   disableSystemFont: "Disable system font",
   hideColorLookupPanel: "Hide color lookup panel",
-  disableWindows: "Disable floating windows",
+  disableWindows: "Disable windows",
+  alwaysEnableFireworks: "Enable fireworks effect",
 };
 
 export default function MenuEntriesSettings() {
@@ -53,6 +54,10 @@ export default function MenuEntriesSettings() {
 
     if (animationKey === "halloween") {
       initialSettings = ["disableSoundEffect", ...initialSettings];
+    }
+
+    if (animationKey === "perpetuity") {
+      initialSettings = ["alwaysEnableFireworks", ...initialSettings];
     }
 
     return initialSettings;
@@ -208,7 +213,7 @@ export default function MenuEntriesSettings() {
       {settingsArray.map((item, index, array) => (
         <Fragment key={item}>
           <div className="flex items-center gap-2">
-            <div className="flex-grow text-lg md:text-xl ml-1">
+            <div className="flex-grow text-lg md:text-xl">
               {settingsNameMap[item as keyof SettingsState]}
             </div>
             <SettingsFlip

@@ -34,6 +34,9 @@ import crimsonConfig from "@/components/theme/config/crimson";
 import eepConfig from "@/components/theme/config/eep";
 import vibrantConfig from "@/components/theme/config/vibrant";
 import galleryConfig from "@/components/theme/config/gallery";
+import celebrationConfig from "@/components/theme/config/celebration";
+import plainGrayConfig from "@/components/theme/config/plainGray";
+import perpetuityConfig from "@/components/theme/config/perpetuity";
 
 export const themeKeyMap: Record<ThemeKey, ThemeDataConfig> = {
   photos: photosConfig,
@@ -72,4 +75,7 @@ export const themeKeyMap: Record<ThemeKey, ThemeDataConfig> = {
   eep: eepConfig,
   vibrant: vibrantConfig,
   gallery: galleryConfig,
+  celebration: celebrationConfig,
+  plainGray: plainGrayConfig,
+  perpetuity: perpetuityConfig,
 };

@@ -34,7 +34,10 @@ type ThemeKey =
   | "crimson"
   | "eep"
   | "vibrant"
-  | "gallery";
+  | "gallery"
+  | "perpetuity"
+  | "celebration"
+  | "plainGray";
 
 type ThemeAnimatedBackgroundKey =
   | "photos"
@@ -50,7 +53,6 @@ type ThemeAnimatedBackgroundKey =
   | "christmas"
   | "grass"
   | "halloween"
-  | "about"
   | "gold"
   | "sky"
   | "storm"
@@ -60,7 +62,9 @@ type ThemeAnimatedBackgroundKey =
   | "underwater"
   | "crimson"
   | "eep"
-  | "gallery";
+  | "gallery"
+  | "perpetuity"
+  | "celebration";
 
 interface ThemeMiscOptions {
   readingBlur?: number;

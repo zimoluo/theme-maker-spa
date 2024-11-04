@@ -34,4 +34,5 @@ export const defaultSettings: SettingsState = {
   disableSystemFont: false,
   hideColorLookupPanel: false,
   disableWindows: false,
+  alwaysEnableFireworks: false,
 };

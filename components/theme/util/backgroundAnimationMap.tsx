@@ -12,7 +12,6 @@ import ShootingStars from "@/components/mainPage/backgroundAnimations/star/Shoot
 import ChristmasAnimatedBackground from "@/components/mainPage/backgroundAnimations/christmas/ChristmasAnimatedBackground";
 import GrassAnimatedBackground from "@/components/mainPage/backgroundAnimations/grass/GrassAnimatedBackground";
 import HalloweenAnimatedBackground from "@/components/mainPage/backgroundAnimations/halloween/HalloweenAnimatedBackground";
-import AboutAnimatedBackground from "@/components/mainPage/backgroundAnimations/about/AboutAnimatedBackground";
 import GoldAnimatedBackground from "@/components/mainPage/backgroundAnimations/gold/GoldAnimatedBackground";
 import SkyAnimatedBackground from "@/components/mainPage/backgroundAnimations/sky/SkyAnimatedBackground";
 import StormAnimatedBackground from "@/components/mainPage/backgroundAnimations/storm/StormAnimatedBackground";
@@ -23,6 +22,8 @@ import UnderwaterAnimatedBackground from "@/components/mainPage/backgroundAnimat
 import CrimsonAnimatedBackground from "@/components/mainPage/backgroundAnimations/crimson/CrimsonAnimatedBackground";
 import EepAnimatedBackground from "@/components/mainPage/backgroundAnimations/eep/EepAnimatedBackground";
 import GalleryAnimatedBackground from "@/components/mainPage/backgroundAnimations/gallery/GalleryAnimatedBackground";
+import PerpetuityAnimatedBackground from "@/components/mainPage/backgroundAnimations/perpetuity/PerpetuityAnimatedBackground";
+import CelebrationAnimatedBackground from "@/components/mainPage/backgroundAnimations/celebration/CelebrationAnimatedBackground";
 
 export const backgroundAnimationMap: Record<
   ThemeAnimatedBackgroundKey,
@@ -41,7 +42,6 @@ export const backgroundAnimationMap: Record<
   christmas: <ChristmasAnimatedBackground />,
   grass: <GrassAnimatedBackground />,
   halloween: <HalloweenAnimatedBackground />,
-  about: <AboutAnimatedBackground />,
   gold: <GoldAnimatedBackground />,
   sky: <SkyAnimatedBackground />,
   storm: <StormAnimatedBackground />,
@@ -52,4 +52,6 @@ export const backgroundAnimationMap: Record<
   crimson: <CrimsonAnimatedBackground />,
   eep: <EepAnimatedBackground />,
   gallery: <GalleryAnimatedBackground />,
+  perpetuity: <PerpetuityAnimatedBackground />,
+  celebration: <CelebrationAnimatedBackground />,
 };

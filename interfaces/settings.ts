@@ -18,6 +18,7 @@ interface SettingsState {
   disableSystemFont: boolean;
   hideColorLookupPanel: boolean;
   disableWindows: boolean;
+  alwaysEnableFireworks: boolean;
 }
 
 type NotificationStyle = "disabled" | "toast" | "banner";

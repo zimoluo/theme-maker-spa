@@ -397,5 +397,10 @@
   ],
   "v1.23.1": ["# Changes", "", "Various improvements to the interface."],
   "v1.23.2": ["# Changes", "", "Improved the window framework logic."],
-  "v1.23.3": ["# Changes", "", "Updated the Next.js version."]
+  "v1.23.3": ["# Changes", "", "Updated the Next.js version."],
+  "v1.24.0": [
+    "# Changes",
+    "",
+    "Added Plain Gray, Celebration, and Perpetuity theme."
+  ]
 }
