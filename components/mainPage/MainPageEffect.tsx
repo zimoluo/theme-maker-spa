@@ -22,7 +22,9 @@ export default function MainPageEffect({ children }: Props) {
 
   useEffect(() => {
     async function downloadUserInfo(): Promise<SettingsState> {
-      const savedRawSettings = localStorage.getItem("websiteSettings");
+      const savedRawSettings =
+        localStorage.getItem("websiteSettingsThemeMakerSPA") ||
+        localStorage.getItem("websiteSettings");
       const loadedSettings = parseStoredSettings(savedRawSettings || "") || {};
 
       updateSettings(loadedSettings, false);

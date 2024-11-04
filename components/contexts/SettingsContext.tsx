@@ -88,7 +88,10 @@ export const SettingsProvider = ({
         updatedSettings
       ) as SettingsState;
 
-      localStorage.setItem("websiteSettings", JSON.stringify(filteredSettings));
+      localStorage.setItem(
+        "websiteSettingsThemeMakerSPA",
+        JSON.stringify(filteredSettings)
+      );
 
       callback(filteredSettings);
 
