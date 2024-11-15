@@ -177,14 +177,10 @@ export default function WindowInstance({ data }: Props) {
     let isAdaptiveOnX = false;
     let isAdaptiveOnY = false;
 
-    // This function pipes the deltaX and deltaY through all the constraints and returns the processed values.
-    // It also takes into account the adaptive flag at the point of execution.
-    // It's used for both the adaptive projection and the actual processing.
     const processDeltasAndGetDimensions = (deltaX: number, deltaY: number) => {
       let processedDeltaX = deltaX;
       let processedDeltaY = deltaY;
 
-      // First restrict the window min max width height.
       processedDeltaX = Math.min(
         ((data.maxWidth ?? Infinity) -
           startWidth -
@@ -212,7 +208,6 @@ export default function WindowInstance({ data }: Props) {
         )
       );
 
-      // Then check the left and bottom viewport borders.
       const bottomRightX = isCenterResizing
         ? beginCenterX + startWidth / 2 + processedDeltaX
         : beginWindowX + startWidth + processedDeltaX;
@@ -240,7 +235,6 @@ export default function WindowInstance({ data }: Props) {
           : windowSoftTopBorder - beginWindowY - startHeight;
       }
 
-      // Then check the aspect ratio limit of the window.
       if (
         (startWidth +
           processedDeltaX * (isCenterResizing && !isAdaptiveOnX ? 2 : 1) +
@@ -331,8 +325,6 @@ export default function WindowInstance({ data }: Props) {
         isAdaptiveOnY = true;
       }
 
-      // The overcounting check for adaptives.
-      // If both are adaptive, we need to additionally project the width and "cut" the part and apply the min max aspect to see if the adaptive is still needed.
       if (isAdaptiveOnX && isAdaptiveOnY) {
         const projectedWidth =
           startWidth + projection.deltaX + beginWindowX - 24;
@@ -370,7 +362,6 @@ export default function WindowInstance({ data }: Props) {
 
     const finalDimensions = processDeltasAndGetDimensions(deltaX, deltaY);
 
-    // This final width has considered adaptive.
     const finalWidth =
       startWidth +
       finalDimensions.deltaX * (isCenterResizing && !isAdaptiveOnX ? 2 : 1) +

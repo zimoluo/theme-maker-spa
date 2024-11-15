@@ -407,5 +407,12 @@
     "# Changes",
     "",
     "Theme Maker settings are now stored separately from Zimo Web settings in some cases."
+  ],
+  "v1.25.0": [
+    "# Changes",
+    "",
+    "* Added Birthday 19 Theme.",
+    "* Ported some new window features from the main site.",
+    "* Theme Maker SPA is expecting end-of-life soon. It will be replaced by a new project."
   ]
 }
