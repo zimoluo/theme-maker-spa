@@ -29,6 +29,7 @@ const settingsNameMap: { [key in keyof Partial<SettingsState>]: string } = {
   hideColorLookupPanel: "Hide color lookup panel",
   disableWindows: "Disable windows",
   alwaysEnableFireworks: "Enable fireworks effect",
+  windowResizeBehavior: "Window resizing behavior",
 };
 
 export default function MenuEntriesSettings() {
@@ -120,6 +121,27 @@ export default function MenuEntriesSettings() {
           {settingsNameMap["notificationStyle"]}
         </div>
         <NotificationStylePicker />
+      </div>
+      <div className="border-primary border-0.4 border-opacity-20" />
+      <div className="md:flex md:items-center">
+        <div
+          className={`md:flex-grow text-lg md:text-xl ${menuStyle.entryMinWidth}`}
+        >
+          {settingsNameMap["windowResizeBehavior"]}
+        </div>
+        <SettingsSlider
+          setValue={(newValue: string | number) => {
+            updateSettings({
+              windowResizeBehavior: newValue as
+                | "corner"
+                | "adaptive"
+                | "center",
+            });
+          }}
+          values={["corner", "center", "adaptive"]}
+          text={["Corner", "Center", "Adaptive"]}
+          entry={settings.windowResizeBehavior}
+        />
       </div>
       <div className="border-primary border-0.4 border-opacity-20" />
       {animationKey === "projects" && (

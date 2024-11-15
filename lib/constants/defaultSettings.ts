@@ -35,4 +35,5 @@ export const defaultSettings: SettingsState = {
   hideColorLookupPanel: false,
   disableWindows: false,
   alwaysEnableFireworks: false,
+  windowResizeBehavior: "adaptive",
 };

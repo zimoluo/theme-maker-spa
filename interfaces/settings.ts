@@ -19,6 +19,7 @@ interface SettingsState {
   hideColorLookupPanel: boolean;
   disableWindows: boolean;
   alwaysEnableFireworks: boolean;
+  windowResizeBehavior: "center" | "corner" | "adaptive";
 }
 
 type NotificationStyle = "disabled" | "toast" | "banner";
