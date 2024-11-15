@@ -24,6 +24,7 @@ import EepAnimatedBackground from "@/components/mainPage/backgroundAnimations/ee
 import GalleryAnimatedBackground from "@/components/mainPage/backgroundAnimations/gallery/GalleryAnimatedBackground";
 import PerpetuityAnimatedBackground from "@/components/mainPage/backgroundAnimations/perpetuity/PerpetuityAnimatedBackground";
 import CelebrationAnimatedBackground from "@/components/mainPage/backgroundAnimations/celebration/CelebrationAnimatedBackground";
+import Birthday19AnimatedBackground from "@/components/mainPage/backgroundAnimations/birthday19/Birthday19AnimatedBackground";
 
 export const backgroundAnimationMap: Record<
   ThemeAnimatedBackgroundKey,
@@ -54,4 +55,5 @@ export const backgroundAnimationMap: Record<
   gallery: <GalleryAnimatedBackground />,
   perpetuity: <PerpetuityAnimatedBackground />,
   celebration: <CelebrationAnimatedBackground />,
+  birthday19: <Birthday19AnimatedBackground />,
 };
